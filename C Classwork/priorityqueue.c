@@ -41,6 +41,7 @@ void dequeue(){
 		pqueue[i].val = pqueue[i+1].val;
 		pqueue[i].priority = pqueue[i+1].priority;		
 	}
+	rear--;
 }
 
 void display(){
