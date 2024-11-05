@@ -91,6 +91,7 @@ int main(){
                 break;
             case 4:
                 display();
+		break;
             case 5:
                 printf("Exiting...\n");
                 return 0;
