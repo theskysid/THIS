@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Codechef/Codechef.iml" filepath="$PROJECT_DIR$/Codechef/Codechef.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codeforces/Codeforces.iml" filepath="$PROJECT_DIR$/Codeforces/Codeforces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DSA.iml" filepath="$PROJECT_DIR$/.idea/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GeeksForGeeks/GeeksForGeeks.iml" filepath="$PROJECT_DIR$/GeeksForGeeks/GeeksForGeeks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leetcode/Leetcode.iml" filepath="$PROJECT_DIR$/Leetcode/Leetcode.iml" />
+    </modules>
+  </component>
+</project>
