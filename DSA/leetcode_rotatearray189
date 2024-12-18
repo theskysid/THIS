@@ -1,4 +1,5 @@
 class Solution {
+    //solution number one best case using recursion and breaking the array into parts
     public void rotate(int[] nums, int k) {
         int n = nums.length;
         k = k % n; // To handle cases where k > n
@@ -22,12 +23,5 @@ class Solution {
         }
     }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] nums = new int[]{1, 2, 3, 4, 5, 6, 7};
-        solution.rotate(nums, 3);
-        for (int i = 0; i < nums.length; i++) {
-            System.out.println(nums[i]);
-        }
-    }
+    // second approach write here
 }
