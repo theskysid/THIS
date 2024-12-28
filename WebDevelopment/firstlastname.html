@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>First Name and Last Name</title>
+</head>
+<body>
+   <h1>Display Full Name</h1>
+   <button onclick="displayFullName()">Show Name</button>
+   <p id="fullName"></p>
+   
+   <script>
+      function first(F) {
+         return F;
+      }
+
+      function last(L) {
+         return L;
+      }
+
+      function displayFullName() {
+         const firstName = first("Siddhant");
+         const lastName = last("Rastogi");
+         
+         const fullName = first + last;
+         document.write(fullName);
+         //document.querySelector('#fullName').innerText = fullName;
+      }
+   </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* Set background image and styling for the body */
+body {
+    background-image: url('/EBookStore/Assests/sitebg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Style for the page title */
+h1 {
+    size: 80;
+    color: aliceblue;
+    text-align: center; /* Center the title */
+}
+
+/* Center the table and style it */
+table {
+    font-size: medium;
+    color: black;
+    margin: 0 auto; /* Horizontal centering */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+    border: 1px black; /* Solid border */
+    background-color: white; /* Add background color to table */
+}
+
+/* Style for navbar */
+ul {
+    list-style-type: none; /* Removes bullets */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 12px; /* Adjusted padding */
+    overflow: hidden;
+    text-align: right; /* Aligns the items to the right */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+/* Styling individual navbar items */
+.navbar li {
+    display: inline-block;
+    margin: 0 10px; /* Spacing between items */
+}
+
+/* Links inside navbar */
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.navbar li a:hover {
+    background-color: #555; /* Hover effect */
+}

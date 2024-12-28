@@ -1,0 +1,18 @@
+.outerbox{
+   display: flex;
+}
+.bigbox {
+   box-sizing: border-box;
+   border: 5px solid red;
+   width: 150px;
+   height: 150px;
+   margin-left: 20px;
+   margin-top: 20px;
+   padding-left: 20px;
+   padding-top: 20px;
+   display: flex;
+}
+.bigbox1 {
+   margin-top: 0%;
+   margin-left: 250px;
+}

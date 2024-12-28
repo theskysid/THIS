@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Layout</title>
+    <style>
+        /* General layout styling */
+        .container {
+            width: 600px;
+            border: 2px solid red;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Top row of small boxes */
+        .top-boxes {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Individual small box */
+        .small-box {
+            flex: 1;
+            height: 50px;
+            border: 2px solid red;
+        }
+
+        /* Large middle box */
+        .middle-box {
+            width: 100%;
+            height: 100px;
+            border: 2px solid red;
+            margin-bottom: 10px;
+        }
+
+        /* Bottom row of small boxes */
+        .bottom-boxes {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        /* Bottom large box */
+        .bottom-large-box {
+            width: 100%;
+            height: 50px;
+            border: 2px solid red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top row -->
+        <div class="top-boxes">
+            <div class="small-box"></div>
+            <div class="small-box"></div>
+            <div class="small-box"></div>
+        </div>
+
+        <!-- Middle box -->
+        <div class="middle-box"></div>
+
+        <!-- Bottom row -->
+        <div class="bottom-boxes">
+            <div class="small-box"></div>
+            <div class="small-box"></div>
+        </div><!-- Bottom large box -->
+        <div class="bottom-large-box"></div>
+    </div>
+</body>
+</html>

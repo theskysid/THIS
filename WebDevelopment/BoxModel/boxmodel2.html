@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Layout</title>
+    <style>
+        /* General layout styling */
+        *{
+         margin: 20px 20px;
+        }
+        .container {
+            width: auto;
+            border: 2px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+            width: device-width;
+            background-color: antiquewhite;
+        }
+        
+        .top-box {
+            width: auto;
+            height: auto;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            background-color: aquamarine;
+        }
+        
+        .middle-box {
+            display: flex;
+            width: auto;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
+            background-color: cadetblue;
+            border: 1px solid black;
+        }
+        
+        .small-box {
+            flex: 1;
+            height: 100px;
+            border: 2px solid black;
+            back
+        }
+        
+        .bottom-box {
+            width: auto;
+            height: 50px;
+            border: 2px solid black;
+        }
+        img{
+         width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-box"><img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"></div>
+        <div class="middle-box">
+            <div class="small-box"></div>
+            <div class="small-box"></div>
+            <div class="small-box"></div>
+        </div>
+        <div class="bottom-box"></div>
+    </div>
+</body>
+</html>

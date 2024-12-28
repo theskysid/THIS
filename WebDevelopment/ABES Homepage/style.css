@@ -1,0 +1,29 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  #para1 {
+    color: red;
+    text-align: red;
+  }
+  .navbar {
+    list-style-type: none; /* This removes bullets */
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    text-align: right; /* Aligns the items to the right */
+}
+.navbar li {
+    float: right; /* Aligns items to the right */
+    margin: 10;
+}

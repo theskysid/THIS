@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aurora - Hack The Spectrum</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="./images/aurora/greengrad.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join Aurora Hackathon, an exciting event by Elixir Tech Community. Showcase your skills, tackle unique problems, and win prizes!"
+    />
+    <meta name="keywords" content="Aurora, Hackathon, Elixir Tech Community, Coding Competition, Tech Event" />
+    <meta name="author" content="Elixir Tech Community" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aurora.elixircommunity.in/" />
+    <meta property="og:title" content="Aurora Hackathon - Elixir Tech Community" />
+    <meta
+      property="og:description"
+      content="Join Aurora Hackathon, an exciting event by Elixir Tech Community. Showcase your skills, tackle unique problems, and win prizes!"
+    />
+    <meta property="og:image" content="https://aurora.elixircommunity.in/images/Banner.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://aurora.elixircommunity.in/" />
+    <meta property="twitter:title" content="Aurora Hackathon - Elixir Tech Community" />
+    <meta
+      property="twitter:description"
+      content="Join Aurora Hackathon, an exciting event by Elixir Tech Community. Showcase your skills, tackle unique problems, and win prizes!"
+    />
+    <meta property="twitter:image" content="https://aurora.elixircommunity.in/images/Banner.png" />
+
+    <link href="asset/stellar/./css/vendors/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="asset/stellar/./css/vendors/swiper-bundle.min.css" />
+    <link href="asset/stellar/./style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("a").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              window.location.hash = hash;
+            },
+          );
+        }
+      });
+    });
+  </script>
+
+  <body class="cp73f curfr cbwtk cqpzc cthh7">
+    <!-- Page wrapper -->
+    <div class="cs2x1 cq32i c8rkc co970">
+      <div class="cs2x1 cq32i c8rkc co970">
+        <!-- Site header -->
+        <header class="cl2cn c5r67 cytoa header">
+          <div class="cknuf chyag ck7tl cj5a0 navbar-container">
+            <div class="cs2x1 cr9dw2 cxwsr clfke c05f2 nav-elements">
+              <!-- Site branding -->
+              <div class="cgtgw cw4n2">
+                <!-- Logo -->
+                <a class="c5puz" href="#about" aria-label="Cruip">
+                  <img src="./images/aurora/aurora-white.png" width="150" height="90" alt="logo" />
+                </a>
+              </div>
+
+              <!-- Desktop navigation -->
+              <nav class="cs2x1 cfck1 navbar">
+                <!-- Desktop sign in links -->
+                <ul class="cs2x1 cfck1 cj38p cxwsr coq9a nav-menu">
+                  <li class="nav-item">
+                    <a class="cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl nav-link" href="#about">About</a>
+                  </li>
+                  <li class="ce6vk nav-item">
+                    <a class="cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl nav-link" href="#collabs">Collabs</a>
+                  </li>
+                  <li class="ce6vk nav-item">
+                    <a class="cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl nav-link" href="#sponsors">Sponsors</a>
+                  </li>
+                  <li class="ce6vk nav-item">
+                    <a class="cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl nav-link" href="#prizes">Prizes</a>
+                  </li>
+                  <li class="ce6vk nav-item">
+                    <a class="cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl nav-link" href="#themes">Themes</a>
+                  </li>
+                  <li class="ce6vk nav-item">
+                    <a class="cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl nav-link" href="#mentors">Mentors</a>
+                  </li>
+                  <li class="ce6vk nav-item">
+                    <a class="cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl nav-link" href="#faq">FAQ</a>
+                  </li>
+                  <li class="ce6vk nav-item">
+                    <a class="cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl nav-link" href="#timeline">Timeline</a>
+                  </li>
+                  <li class="ce6vk nav-item">
+                    <a class="cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .navbar-container {
+              background: rgba(33, 98, 107, 0.014);
+              margin: 0px;
+              max-width: 100%;
+            }
+
+            .nav-elements {
+              margin: 0px;
+            }
+            .hamburger {
+              display: none;
+              cursor: pointer;
+            }
+
+            .bar {
+              display: block;
+              width: 25px;
+              height: 3px;
+              margin: 5px auto;
+              -webkit-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+              background-color: #cbd5e1;
+            }
+            .header {
+              position: fixed;
+              top: 0px;
+              width: 100%;
+              backdrop-filter: blur(50px);
+            }
+
+            @media (max-width: 828px) {
+              .navbar-container {
+                background: rgba(33, 98, 107, 0.527);
+              }
+              .hamburger {
+                display: block;
+                margin-left: 80%;
+              }
+
+              .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+              }
+
+              .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+              }
+
+              .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+              }
+
+              .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 0px;
+                gap: 0;
+                background: radial-gradient(circle at 50% 50%, rgb(33, 98, 107), rgba(76, 0, 255, 0));
+                /* background-color: rgb(6, 114, 126); */
+                /* border-radius: 30px; */
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: 0.3s;
+                backdrop-filter: blur(16px);
+                /* inset: 0; */
+                justify-content: center;
+                align-items: center;
+                z-index: -1;
+                display: none;
+              }
+
+              .nav-item {
+                margin: 10px 10px;
+              }
+
+              .nav-menu.active {
+                display: flex;
+                left: 0;
+              }
+
+              .nav-link:hover {
+                color: rgb(20, 219, 189);
+              }
+
+              .header {
+                position: fixed;
+                backdrop-filter: blur(0px);
+              }
+
+              .header.active {
+                backdrop-filter: blur(50px);
+                height: 100%;
+              }
+            }
+          </style>
+          <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+            const header = document.querySelector(".header");
+
+            hamburger.addEventListener("click", () => {
+              hamburger.classList.toggle("active");
+              navMenu.classList.toggle("active");
+              header.classList.toggle("active");
+            });
+
+            document.querySelectorAll(".nav-link").forEach((n) =>
+              n.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+                header.classList.toggle("active");
+              }),
+            );
+          </script>
+        </header>
+
+        <!-- Page content -->
+        <main class="cfck1">
+          <!-- Hero -->
+          <section id="about">
+            <div class="ca60c cknuf chyag ck7tl cj5a0">
+              <!-- Particles animation -->
+              <div class="cl2cn c9pxh c0mvq" aria-hidden="true">
+                <canvas data-particle-animation=""></canvas>
+              </div>
+
+              <!-- Illustration -->
+              <div class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cpa88" aria-hidden="true">
+                <div class="cl2cn cl2el cddhp c0mvq cbixb">
+                  <img
+                    src="./asset/stellar/images/glow-bottom-blue-lessbright.png"
+                    class="cxjf2"
+                    width="2146"
+                    height="774"
+                    alt="Hero Illustration"
+                  />
+                </div>
+              </div>
+
+              <div class="csfv3 ccyse c9me8 cxnp8">
+                <!-- Hero content -->
+                <div class="cknuf cz30m c1xp8">
+                  <div class="cil4g" data-aos="fade-down">
+                    <div class="ca60c cwkz6 cc4v0 cqez1 cpt2o cimec">
+                      <a
+                        class="clnk2 ca60c c8cvf cuxtl cngu6 cco4s cykc9 c2rol csomw cm39l cc4v0 cqez1 ch9g6 cuhzf c5dkl cxxlx"
+                        href="https://www.elixircommunity.in/"
+                        target="_blank"
+                      >
+                        <span class="ca60c cwkz6 cxwsr">
+                          Elixir Website <span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <h1 class="cgnl7 cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj" data-aos="fade-down">
+                    Aurora : Hack The Spectrum
+                  </h1>
+                  <p class="cvj3n cd2du cuxtl" data-aos="fade-down" data-aos-delay="200">
+                    Join us for Aurora, a dynamic hackathon designed to immerse students in the world of Web3
+                    technologies. Experience a unique blend of creativity and cutting-edge tech, and help shape the
+                    future of the decentralized web with the Elixir Tech community.
+                  </p>
+                  <div
+                    class="cknuf chnsh csz2t c0bgf c2mz6 c7xko cpdb4 c5cwt"
+                    data-aos="fade-down"
+                    data-aos-delay="400"
+                  >
+                    <div>
+                      <a
+                        class="cmae3 cytoa cmmug c53mx ccarb cvpag culnm cco4s cykc9 c2rol cnen9 cxxlx devfolio"
+                        href="https://aurora2024.devfolio.co/"
+                        target="_blank"
+                      >
+                        <img src="./images/DevfolioDark.png" width="85" alt="DEVFOLIO LOGO"
+                      /></a>
+                      <!-- <span>
+                                            Devfolio <span
+                                                class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span> -->
+                    </div>
+                    <div>
+                      <a
+                        class="cmae3 cytoa cp73f clbrg czs2g cco4s cykc9 c2rol cfn05 c5dkl"
+                        href="https://discord.com/invite/YN9ZGjXdXK"
+                        target="_blank"
+                      >
+                        <span><i class="fa-brands fa-github" style="color: #ffffff"></i> Discord</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <style>
+            .devfolio {
+              font-weight: bold;
+            }
+          </style>
+
+          <!-- Clients -->
+          <section id="collabs">
+            <div class="ca60c cknuf chyag ck7tl cj5a0">
+              <!-- Particles animation -->
+              <div class="cl2cn c9pxh cknuf chyag ck7tl cj5a0">
+                <div class="cl2cn c9pxh c0mvq" aria-hidden="true">
+                  <canvas data-particle-animation="" data-particle-quantity="5"></canvas>
+                </div>
+              </div>
+
+              <div class="ctvyg cy0uw">
+                <div class="co970">
+                  <div class="wrapper">
+                    <p>
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                      REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp; REGISTRATIONS ARE LIVE &nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                  </div>
+                  <style>
+                    @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+                    .wrapper {
+                      width: 100%;
+                    }
+
+                    .wrapper p {
+                      width: 100%;
+                      font-family: "Anton", sans-serif;
+                      font-weight: 400;
+                      font-style: normal;
+                      letter-spacing: 3px;
+                      font-size: 4rem;
+                      white-space: nowrap;
+                      animation: marquee 30s linear infinite;
+                    }
+
+                    @keyframes marquee {
+                      0% {
+                        transform: translateX(100%);
+                      }
+                      100% {
+                        transform: translateX(-500%);
+                      }
+                    }
+                  </style>
+                  <!-- Carousel built with Swiper.js [https://swiperjs.com/] -->
+                  <!-- * Initialized in src/js/main.js -->
+                  <!-- * Custom styles in src/css/additional-styles/theme.scss -->
+                  <!-- <div
+                                    class="clients-carousel swiper-container ca60c cm39l cc4v0 cqez1 c0h98 crvsw cfnmv cb98v ctgyu cysd2 cgxgf c45xe cv2ch c1o86 chum8 c9ygy">
+                                    <h3 class="ckomn cmmug cr2fi chaw1 ch3zp cicf4 c0xld cjeaj headingcollabs">
+                                        Collaborators</h3>
+                                    <div class="swiper-wrapper cyvt8 cxwsr cmehy">
+                                        
+                                        <div class="swiper-slide czmgy">
+                                            <img src="./asset/stellar/images/client-01.svg" alt="collab1" width="110"
+                                                height="21">
+                                        </div>
+                                        <div class="swiper-slide czmgy">
+                                            <img src="./asset/stellar/images/client-02.svg" alt="collab2" width="70"
+                                                height="25">
+                                        </div>
+                                        <div class="swiper-slide czmgy">
+                                            <img class="cn53t" src="./asset/stellar/images/client-03.svg"
+                                                alt="Client 03" width="107" height="33">
+                                        </div>
+                                        <div class="swiper-slide czmgy">
+                                            <img src="./asset/stellar/images/client-04.svg" alt="collab4" width="85"
+                                                height="36">
+                                        </div>
+                                        <div class="swiper-slide czmgy">
+                                            <img src="./asset/stellar/images/client-05.svg" alt="collab5" width="86"
+                                                height="18">
+                                        </div>
+                                        <div class="swiper-slide czmgy">
+                                            <img src="./asset/stellar/images/client-06.svg" alt="collab6" width="78"
+                                                height="34">
+                                        </div>
+                                        <div class="swiper-slide czmgy">
+                                            <img src="./asset/stellar/images/client-07.svg" alt="collab7" width="83"
+                                                height="23">
+                                        </div>
+                                        <div class="swiper-slide czmgy">
+                                            <img src="./asset/stellar/images/client-08.svg" alt="collab8" width="98"
+                                                height="26">
+                                        </div>
+                                        <div class="swiper-slide czmgy">
+                                            <img class="cuwsu" src="./asset/stellar/images/client-09.svg" alt="collab9"
+                                                width="92" height="28">
+                                        </div>
+                                    </div>
+                                </div> -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Features -->
+          <section id="sponsors">
+            <div class="ca60c cknuf chyag ck7tl cj5a0">
+              <!-- Illustration -->
+              <div class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cu7zb" aria-hidden="true">
+                <div class="cl2cn cddhp c2aec c0mvq cbixb">
+                  <img
+                    src="./asset/stellar/images/glow-top-blue.png"
+                    class="cxjf2"
+                    width="1404"
+                    height="658"
+                    alt="Features Illustration"
+                  />
+                </div>
+              </div>
+              <!-- Blurred shape -->
+              <div class="c431g cl2cn cddhp c2aec c0mvq cbixb curw3 cluw3 citek" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                  <defs>
+                    <lineargradient id="bs3-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                      <stop offset="0%" stop-color="#1AB4B0"></stop>
+                      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"></stop>
+                    </lineargradient>
+                  </defs>
+                  <path
+                    fill="url(#bs3-a)"
+                    fill-rule="evenodd"
+                    d="m410 0 461 369-284 58z"
+                    transform="matrix(1 0 0 -1 -410 427)"
+                  ></path>
+                </svg>
+              </div>
+
+              <div class="cknuf chyag ck7tl cj5a0">
+                <div class="cw8rx c3ebo cz74e c4w2r cpnha ctga0">
+                  <!-- Section header -->
+                  <div class="cknuf cz30m cz74e c1xp8 cpnha">
+                    <h2 class="cr09c cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj">Elite Partners in Innovation</h2>
+                    <p class="cd2du cfoch">
+                      Devcon2024 is set to be a groundbreaking event, featuring top-notch speakers and hands-on
+                      workshops. It offers a vibrant platform for networking and exploring the latest tech trends.
+                      Attendees can look forward to insightful sessions that drive innovation and collaboration.
+                    </p>
+                  </div>
+
+                  <div class="cknuf cz30m">
+                    <div data-aos="fade-down">
+                      <div class="cxxlx" data-highlighter="">
+                        <div
+                          class="ca60c co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 cahiq"
+                        >
+                          <a href="https://devcon.org/en/" target="_blank" rel="noopener noreferrer">
+                            <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                              <!-- Radial gradient -->
+                              <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cucbd cbixb cqedr" aria-hidden="true">
+                                <div class="c0wqh cl2cn c9pxh cky3t c33km cxp9g"></div>
+                              </div>
+                              <img src="./images/aurora/devcon.png" width="768" height="400" alt="Feature 04" />
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Testimonials carousel -->
+          <section>
+            <div class="cknuf chyag ck7tl cj5a0">
+              <div class="csaom cksyi">
+                <!-- Section header -->
+                <!-- Gold Silver and Bronze Sponsors -->
+                <div class="cknuf cz30m cz74e c1xp8 cpnha">
+                  <div>
+                    <div class="cwkz6 cmmug cpb1t c6mtw cicf4 c0xld ciph8 cjeaj">
+                      Supporters Driving the Future of Web3
+                    </div>
+                  </div>
+                  <h2 class="cr09c cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj">MEET OUR VISIONARY SPONSORS</h2>
+                  <p class="cd2du cfoch">Explore the organizations fueling innovation and making Aurora possible.</p>
+                </div>
+
+                <!-- Carousel built with Swiper.js [https://swiperjs.com/] -->
+                <!-- * Initialized in src/js/main.js -->
+                <!-- * Custom styles in src/css/additional-styles/theme.scss -->
+                <div
+                  class="ca60c cc4v0 cqez1 c0xhb chxq1 ckrgn c80l1 cxbfo cy3ub cysd2 cgxgf cur8q cdlvo ct9mr ckqgz corv8 cgemu"
+                >
+                  <div class="testimonials-carousel swiper-container cxxlx">
+                    <div class="cn7ud flex-col w-full" data-highlighter="">
+                      <!-- Carousel items -->
+
+                      <div
+                        class="my-10 swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <!-- Sponsor Details -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa relative h-60">
+                            <div
+                              class="c8p73 absolute bottom-[35%] -left-[4.2rem] bg-[#d4af37] -rotate-90 text-center font-semibold text-lg text-white py-2 w-[10em] h-fit rounded-b-xl rounded-t-[0rem]"
+                            >
+                              GOLD
+                            </div>
+                            <div class="cfck1">
+                              <!-- <div class="ceq85 cd2du cokyf text-center text-[1.8em] mb-2">Gold Sponsor</div> -->
+                              <div class="c8p73 cfoch flex justify-center items-center h-full">
+                                <div class="flex flex-col justify-center">
+                                  <img src="./images/ibw.svg" />
+                                  <div class="font-semibold text-lg leading-none">
+                                    India Blockchain <br />
+                                    Week 2024
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="ce3al border-t border-gray-800"></div> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-10 swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa relative h-60">
+                            <div
+                              class="c8p73 absolute rounded-b-xl rounded-t-[0rem] bottom-[35%] -left-[4.2rem] bg-[#abb5a0] -rotate-90 text-center font-semibold text-lg text-white py-2 w-[10em] h-fit"
+                            >
+                              SILVER
+                            </div>
+                            <div class="cfck1">
+                              <!-- <div class="ceq85 cd2du cokyf text-center text-[1.8em]">Silver Sponsor</div> -->
+                              <div
+                                class="c8p73 cfoch flex justify-center items-center h-full flex-col md:flex-row gap-8 md:gap-20 mb-8"
+                              >
+                                <img class="w-48" src="./images/devfolio.svg" alt="DEVFOLIO LOGO" />
+                                <img class="w-60" src="./images/QuillAudit.webp" />
+                              </div>
+                            </div>
+                            <!-- <div class="ce3al border-t border-gray-800"></div> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-10 swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa relative h-60">
+                            <div
+                              class="c8p73 absolute rounded-b-xl rounded-t-[0rem] bottom-[35%] -left-[4.2rem] bg-[#CD7F32] -rotate-90 text-center font-semibold text-lg text-white py-2 w-[10em] h-fit"
+                            >
+                              BRONZE
+                            </div>
+                            <div class="cfck1">
+                              <!-- <div class="ceq85 cd2du cokyf text-center text-[1.8em]">Bronze Sponsor</div> -->
+                              <div class="c8p73 cfoch flex flex-row justify-center gap-8 md:gap-20 mt-8">
+                                <img class="w-24 md:w-40" src="./images/ethindia-logo.svg" alt="ETHINDIA LOGO" />
+                                <div class="flex flex-col items-center justify-center">
+                                  <img class="w-20 md:w-36" src="./images/Polygon.svg" alt="POLYGON LOGO" />
+                                  <span class="font-semibold md:text-lg">Polygon</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="ce3al border-t border-gray-800"></div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- End -->
+
+                <!-- Arrows -->
+              </div>
+            </div>
+          </section>
+          <!-- Testimonials carousel -->
+          <section>
+            <div class="cknuf chyag ck7tl cj5a0">
+              <div class="csaom cksyi">
+                <!-- Section header -->
+                <!-- Gold Silver and Bronze Sponsors -->
+                <div class="cknuf cz30m cz74e c1xp8 cpnha">
+                  <div>
+                    <div class="cwkz6 cmmug cpb1t c6mtw cicf4 c0xld ciph8 cjeaj">Welcoming</div>
+                  </div>
+                  <h2 class="cr09c cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj">Our Community Partners</h2>
+                </div>
+
+                <!-- Carousel built with Swiper.js [https://swiperjs.com/] -->
+                <!-- * Initialized in src/js/main.js -->
+                <!-- * Custom styles in src/css/additional-styles/theme.scss -->
+                <div
+                  class="ca60c cc4v0 cqez1 c0xhb chxq1 ckrgn c80l1 cxbfo cy3ub cysd2 cgxgf cur8q cdlvo ct9mr ckqgz corv8 cgemu"
+                >
+                  <div class="testimonials-carousel swiper-container cxxlx">
+                    <div class="swiper-wrapper cn7ud" data-highlighter="">
+                      <!-- Carousel items -->
+                      <div
+                        class="swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa">
+                            <img
+                              class="c8p73"
+                              src="./images/community-partners/BWC banner - black - Kumar.jpg"
+                              width="56"
+                              height="56"
+                              alt="Icon 01"
+                            />
+                            <div class="cfck1">
+                              <div class="ceq85 cd2du cokyf">Blockchain World Co</div>
+                            </div>
+                            <div class="ce3al">
+                              <a
+                                class="cwkz6 cxwsr cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl cxxlx"
+                                href="https://www.instagram.com/blockchainworldco/"
+                                target="_blank"
+                                >Check Out<span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa">
+                            <div>
+                              <img
+                                class="c8p73"
+                                src="./images/community-partners/IMG-20240626-WA0060 - Daksh Saini.jpg"
+                                width="56"
+                                height="56"
+                                alt="Icon 01"
+                              />
+                            </div>
+                            <div class="cfck1">
+                              <div class="ceq85 cd2du cokyf">CodeX</div>
+                            </div>
+                            <div class="ce3al">
+                              <a
+                                class="cwkz6 cxwsr cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl cxxlx"
+                                href="https://www.instagram.com/codexnetwork8?igsh=MWJzbG9jOHZscmswMw=="
+                                target="_blank"
+                                >Check Out<span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa">
+                            <img
+                              class="c8p73"
+                              src="./images/community-partners/Code Social - Arushi Malhotra.png"
+                              width="56"
+                              height="56"
+                              alt="Icon 01"
+                            />
+                            <div class="cfck1">
+                              <div class="ceq85 cd2du cokyf">Code Social</div>
+                            </div>
+                            <div class="ce3al">
+                              <a
+                                class="cwkz6 cxwsr cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl cxxlx"
+                                href="https://www.instagram.com/codesocial.tech/"
+                                target="_blank"
+                                >Check Out<span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <!-- Sponsor Details -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa">
+                            <img
+                              class="c8p73"
+                              src="./images/community-partners/Coding Catalyst (2) - Abhinav Gupta.png"
+                              width="56"
+                              height="56"
+                              alt="Icon 01"
+                            />
+                            <div class="cfck1">
+                              <div class="ceq85 cd2du cokyf">Coding Catalyst</div>
+                            </div>
+                            <div class="ce3al">
+                              <a
+                                class="cwkz6 cxwsr cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl cxxlx"
+                                href="https://instagram.com/codingcatalyst/"
+                                target="_blank"
+                                >Check Out<span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa">
+                            <img
+                              class="c8p73"
+                              src="./images/community-partners/centerdwhite v.png"
+                              width="56"
+                              height="56"
+                              alt="Icon 01"
+                            />
+                            <div class="cfck1">
+                              <div class="ceq85 cd2du cokyf">Decentraclasses</div>
+                            </div>
+                            <div class="ce3al">
+                              <a
+                                class="cwkz6 cxwsr cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl cxxlx"
+                                href="https://www.instagram.com/decentraclasses?igsh=cnE2ejIza3FtbTEy"
+                                target="_blank"
+                                >Check Out<span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa">
+                            <img
+                              class="c8p73"
+                              src="./images/community-partners/DevStation- transparent Logo - Harsh Trivedi.png"
+                              width="56"
+                              height="56"
+                              alt="Icon 01"
+                            />
+                            <div class="cfck1">
+                              <div class="ceq85 cd2du cokyf">DevStation</div>
+                            </div>
+                            <div class="ce3al">
+                              <a
+                                class="cwkz6 cxwsr cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl cxxlx"
+                                href="https://www.instagram.com/dev__station?igsh=MXRjZHF0bHRrMjh0Yg=="
+                                target="_blank"
+                                >Check Out<span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa">
+                            <img
+                              class="c8p73"
+                              style="object-fit: contain"
+                              src="./images/community-partners/DevApexindia - SACHIN JHA.png"
+                              width="56"
+                              height="56"
+                              alt="Icon 01"
+                            />
+                            <div class="cfck1">
+                              <div class="ceq85 cd2du cokyf">DevApex India</div>
+                            </div>
+                            <div class="ce3al">
+                              <a
+                                class="cwkz6 cxwsr cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl cxxlx"
+                                href="https://www.linkedin.com/company/devapexindia"
+                                target="_blank"
+                                >Check Out<span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-slide ca60c c4im5 co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 c7nu9 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <!-- Particles animation -->
+                          <div class="cl2cn c9pxh c0mvq c11y1 cd1bq cqp1f c2rol cffk1 cxlvw" aria-hidden="true">
+                            <canvas data-particle-animation="" data-particle-quantity="3"></canvas>
+                          </div>
+                          <!-- Radial gradient -->
+                          <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cmd0z cbixb cqedr" aria-hidden="true">
+                            <div class="c0wqh cl2cn c9pxh cky3t ctqkp c07gv cmltl cqp1f c2rol cx92y"></div>
+                          </div>
+                          <div class="cs2x1 c0tib c8rkc clcaa">
+                            <img
+                              class="c8p73"
+                              style="object-fit: contain"
+                              src="./images/community-partners/Logo - Srishti Rohila.jpg"
+                              width="56"
+                              height="56"
+                              alt="Icon 01"
+                            />
+                            <div class="cfck1">
+                              <div class="ceq85 cd2du cokyf">Society for Data Science</div>
+                            </div>
+                            <div class="ce3al">
+                              <a
+                                class="cwkz6 cxwsr cqnsz ciph8 cuxtl cco4s cykc9 c2rol c5dkl cxxlx"
+                                href="https://linktr.ee/S4DS_MIET"
+                                target="_blank"
+                                >Check Out<span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- End -->
+
+                <!-- Arrows -->
+                <div class="cxce1 cs2x1 coq9a">
+                  <button class="carousel-prev ca60c c64tv cs2x1 c2hko c87jw cxwsr crt5c cxxlx">
+                    <span class="cs8a6">Previous</span>
+                    <svg
+                      class="cn056 cwn2x cqpoa cco4s cykc9 c2rol ca7b4"
+                      viewbox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M6.7 14.7l1.4-1.4L3.8 9H16V7H3.8l4.3-4.3-1.4-1.4L0 8z"></path>
+                    </svg>
+                  </button>
+                  <button class="carousel-next ca60c c64tv cs2x1 c2hko c87jw cxwsr crt5c cxxlx">
+                    <span class="cs8a6">Next</span>
+                    <svg
+                      class="cn056 cwn2x cqpoa cco4s cykc9 c2rol ca7b4"
+                      viewbox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M9.3 14.7l-1.4-1.4L12.2 9H0V7h12.2L7.9 2.7l1.4-1.4L16 8z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Features #2 -->
+          <section class="ca60c" id="prizes">
+            <!-- Particles animation -->
+            <div class="cl2cn cddhp c2aec c0mvq cvb2e cclmt c2khh ca67m cbixb">
+              <div class="cl2cn c9pxh c0mvq" aria-hidden="true">
+                <canvas data-particle-animation="" data-particle-quantity="6" data-particle-staticity="30"></canvas>
+              </div>
+            </div>
+
+            <!-- bounties -->
+            <div class="cknuf chyag ck7tl cj5a0">
+              <div class="c4w2r ctga0">
+                <!-- Section header -->
+                <div class="cknuf cz30m cz74e c1xp8 cpnha">
+                  <h3>Unlock Rewards and Challenges</h3>
+                  <h2 class="cr09c cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj">Exciting Bounties Await</h2>
+                  <br />
+                  <p class="cd2du cfoch">
+                    Dive into a range of opportunities to showcase your skills, tackle unique problems, and earn
+                    valuable prizes throughout the hackathon.
+                  </p>
+                </div>
+
+                <!-- Highlighted boxes -->
+                <div class="ca60c cz74e cpnha">
+                  <!-- Blurred shape -->
+                  <div class="c431g cl2cn cl2el cddhp cts7m cbixb cluw3 citek" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                      <defs>
+                        <lineargradient id="bs2-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                          <stop offset="0%" stop-color="#6366F1"></stop>
+                          <stop offset="100%" stop-color="#6366F1" stop-opacity="0"></stop>
+                        </lineargradient>
+                      </defs>
+                      <path
+                        fill="url(#bs2-a)"
+                        fill-rule="evenodd"
+                        d="m346 898 461 369-284 58z"
+                        transform="translate(-346 -898)"
+                      ></path>
+                    </svg>
+                  </div>
+                  <!-- Grid -->
+                  <div class="cq0og c9bxp cxxlx cv2mg" data-highlighter="">
+                    <!-- Box #1 -->
+                    <div class="cr3j3" data-aos="fade-down">
+                      <div
+                        class="ca60c c0tib co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <div class="cs2x1 c8rkc cg7n6 c49l0 ciajx">
+                            <!-- Blurred shape -->
+                            <div class="cl2cn cm7vm c2aec citek" aria-hidden="true">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="342" height="393">
+                                <defs>
+                                  <lineargradient id="bs-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                                    <stop offset="0%" stop-color="#6366F1"></stop>
+                                    <stop offset="100%" stop-color="#6366F1" stop-opacity="0"></stop>
+                                  </lineargradient>
+                                </defs>
+                                <path
+                                  fill="url(#bs-a)"
+                                  fill-rule="evenodd"
+                                  d="m104 .827 461 369-284 58z"
+                                  transform="translate(0 -112.827)"
+                                  opacity=".7"
+                                ></path>
+                              </svg>
+                            </div>
+                            <!-- Radial gradient -->
+                            <div
+                              class="c431g cl2cn cl2el cddhp c0mvq cs2x1 cmfhc c0tib cbixb cqedr cxwsr crt5c"
+                              aria-hidden="true"
+                            >
+                              <div class="c0wqh cl2cn c9pxh cky3t c33km cx692 cxp9g"></div>
+                              <div class="c0wqh cl2cn c7ux4 cgfe7 cky3t ciia3 cexn0"></div>
+                            </div>
+                            <div
+                              class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cpa88"
+                              style="filter: brightness(50%)"
+                              aria-hidden="true"
+                            >
+                              <div class="cl2cn cl2el cddhp c0mvq cbixb">
+                                <img
+                                  src="./asset/stellar/images/glow-bottom-blue-lessbright.png"
+                                  class="cxjf2"
+                                  width="2146"
+                                  height="774"
+                                  alt="Hero Illustration"
+                                />
+                              </div>
+                            </div>
+
+                            <!-- Text -->
+                            <div class="c2te9 cw4n2 clcaa cb16y chnvr cl1ed cjanb c7gt9">
+                              <div class="cgvph">
+                                <div>
+                                  <h3 class="cwkz6 cmmug cr2fi chaw1 ch3zp cicf4 c1mbe c9qka cokyf cjeaj">
+                                    Best Use of Blockchain Identity
+                                  </h3>
+                                  <p class="cfoch">
+                                    Develop a decentralized application (dApp) that leverages blockchain technology to
+                                    manage digital identities securely and efficiently.
+                                  </p>
+                                  <br />
+                                  <p class="cfoch">Prize: $2,000 in cryptocurrency + exclusive mentorship session.</p>
+                                </div>
+                              </div>
+                              <div>
+                                <a
+                                  class="clnk2 ca60c cuxtl cco4s cykc9 c2rol cuogv cm39l cc4v0 cqez1 ch9g6 cypz5 c5dkl cxxlx"
+                                  href="https://preview.cruip.com/#0"
+                                >
+                                  <span class="ca60c cwkz6 cxwsr">
+                                    Learn more <span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span>
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- Image -->
+                            <div class="ca60c cogav cytoa co970 c926l">
+                              <img
+                                class="cl2cn cl2el cddhp cknuf cxjf2 cbixb cu5fu c9jv3 c11ot"
+                                src="./asset/stellar/images/feature-image-01.png"
+                                width="504"
+                                height="400"
+                                alt="Feature 01"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Box #2 -->
+                    <div class="cid9a" data-aos="fade-down">
+                      <div
+                        class="ca60c c0tib co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <div class="cs2x1 c8rkc">
+                            <div
+                              class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cpa88"
+                              style="filter: brightness(50%)"
+                              aria-hidden="true"
+                            >
+                              <div class="cl2cn cl2el cddhp c0mvq cbixb">
+                                <img
+                                  src="./asset/stellar/images/glow-bottom-blue-lessbright.png"
+                                  class="cxjf2"
+                                  width="2146"
+                                  height="774"
+                                  alt="Hero Illustration"
+                                />
+                              </div>
+                            </div>
+                            <!-- Radial gradient -->
+                            <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cucbd cbixb cqedr" aria-hidden="true">
+                              <div class="c0wqh cl2cn c9pxh cky3t ctqkp ctwv8"></div>
+                            </div>
+                            <!-- Text -->
+                            <div class="c2te9 cw4n2 clcaa cb16y chnvr cl1ed cjanb">
+                              <div>
+                                <h3 class="cwkz6 cmmug cr2fi chaw1 ch3zp cicf4 c1mbe c9qka cokyf cjeaj">
+                                  Second Prize
+                                </h3>
+                                <p class="cfoch">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi delectus mollitia
+                                  vitae quam aliquam distinctio? Aperiam animi ipsa doloremque, commodi asperiores illo
+                                  magnam magni maxime quidem repellendus beatae autem voluptas?
+                                </p>
+                              </div>
+                            </div>
+                            <!-- Image -->
+                            <div class="ca60c cogav cytoa co970 c926l cq699">
+                              <img
+                                class="cl2cn cl2el cddhp cknuf cxjf2 cbixb cu5fu c9jv3 c41ju c11ot"
+                                src="./asset/stellar/images/feature-image-02.png"
+                                width="536"
+                                height="230"
+                                alt="Feature 02"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Box #2 -->
+                    <div class="cid9a" data-aos="fade-down">
+                      <div
+                        class="ca60c c0tib co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <div class="cs2x1 c8rkc">
+                            <div
+                              class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cpa88"
+                              style="filter: brightness(50%)"
+                              aria-hidden="true"
+                            >
+                              <div class="cl2cn cl2el cddhp c0mvq cbixb">
+                                <img
+                                  src="./asset/stellar/images/glow-bottom-blue-lessbright.png"
+                                  class="cxjf2"
+                                  width="2146"
+                                  height="774"
+                                  alt="Hero Illustration"
+                                />
+                              </div>
+                            </div>
+                            <!-- Radial gradient -->
+                            <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cucbd cbixb cqedr" aria-hidden="true">
+                              <div class="c0wqh cl2cn c9pxh cky3t ctqkp ctwv8"></div>
+                            </div>
+                            <!-- Text -->
+                            <div class="c2te9 cw4n2 clcaa cb16y chnvr cl1ed cjanb">
+                              <div>
+                                <h3 class="cwkz6 cmmug cr2fi chaw1 ch3zp cicf4 c1mbe c9qka cokyf cjeaj">
+                                  Second Prize
+                                </h3>
+                                <p class="cfoch">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi delectus mollitia
+                                  vitae quam aliquam distinctio? Aperiam animi ipsa doloremque, commodi asperiores illo
+                                  magnam magni maxime quidem repellendus beatae autem voluptas?
+                                </p>
+                              </div>
+                            </div>
+                            <!-- Image -->
+                            <div class="ca60c cogav cytoa co970 c926l cq699">
+                              <img
+                                class="cl2cn cl2el cddhp cknuf cxjf2 cbixb cu5fu c9jv3 c41ju c11ot"
+                                src="./asset/stellar/images/feature-image-02.png"
+                                width="536"
+                                height="230"
+                                alt="Feature 02"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Box #3 -->
+                    <div class="cy7um" data-aos="fade-down">
+                      <div
+                        class="ca60c c0tib co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <div class="cs2x1 c8rkc">
+                            <div
+                              class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cpa88"
+                              style="filter: brightness(50%)"
+                              aria-hidden="true"
+                            >
+                              <div class="cl2cn cl2el cddhp c0mvq cbixb">
+                                <img
+                                  src="./asset/stellar/images/glow-bottom-blue-lessbright.png"
+                                  class="cxjf2"
+                                  width="2146"
+                                  height="774"
+                                  alt="Hero Illustration"
+                                />
+                              </div>
+                            </div>
+                            <!-- Radial gradient -->
+                            <!-- <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cucbd cbixb cqedr"
+                                                      aria-hidden="true">
+                                                      <div class="c0wqh cl2cn c9pxh cky3t ctqkp ctwv8"></div>
+                                                  </div> -->
+                            <!-- Text -->
+                            <div class="c2te9 cw4n2 clcaa cb16y chnvr cl1ed cjanb">
+                              <div>
+                                <h3 class="cwkz6 cmmug cr2fi chaw1 ch3zp cicf4 c1mbe c9qka cokyf cjeaj">Winner</h3>
+                                <p class="cfoch">INR 10,000 + prizes for everyone</p>
+                              </div>
+                            </div>
+                            <!-- Image -->
+                            <div class="ca60c cogav cytoa co970 c926l cq699">
+                              <img
+                                class="cl2cn cl2el cddhp cknuf cxjf2 cbixb cu5fu c9jv3 c41ju c11ot"
+                                src="./asset/stellar/images/feature-image-03.png"
+                                width="230"
+                                height="230"
+                                alt="Feature 03"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Box #3 -->
+                    <div class="cy7um" data-aos="fade-down">
+                      <div
+                        class="ca60c c0tib co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <div class="cs2x1 c8rkc">
+                            <div
+                              class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cpa88"
+                              style="filter: brightness(50%)"
+                              aria-hidden="true"
+                            >
+                              <div class="cl2cn cl2el cddhp c0mvq cbixb">
+                                <img
+                                  src="./asset/stellar/images/glow-bottom-blue-lessbright.png"
+                                  class="cxjf2"
+                                  width="2146"
+                                  height="774"
+                                  alt="Hero Illustration"
+                                />
+                              </div>
+                            </div>
+                            <!-- Radial gradient -->
+                            <!-- <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cucbd cbixb cqedr"
+                                                        aria-hidden="true">
+                                                        <div class="c0wqh cl2cn c9pxh cky3t ctqkp ctwv8"></div>
+                                                    </div> -->
+                            <!-- Text -->
+                            <div class="c2te9 cw4n2 clcaa cb16y chnvr cl1ed cjanb">
+                              <div>
+                                <h3 class="cwkz6 cmmug cr2fi chaw1 ch3zp cicf4 c1mbe c9qka cokyf cjeaj">Winner</h3>
+                                <p class="cfoch">INR 10,000 + prizes for everyone</p>
+                              </div>
+                            </div>
+                            <!-- Image -->
+                            <div class="ca60c cogav cytoa co970 c926l cq699">
+                              <img
+                                class="cl2cn cl2el cddhp cknuf cxjf2 cbixb cu5fu c9jv3 c41ju c11ot"
+                                src="./asset/stellar/images/feature-image-03.png"
+                                width="230"
+                                height="230"
+                                alt="Feature 03"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Box #3 -->
+                    <div class="cy7um" data-aos="fade-down">
+                      <div
+                        class="ca60c c0tib co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <div class="cs2x1 c8rkc">
+                            <div
+                              class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cpa88"
+                              style="filter: brightness(50%)"
+                              aria-hidden="true"
+                            >
+                              <div class="cl2cn cl2el cddhp c0mvq cbixb">
+                                <img
+                                  src="./asset/stellar/images/glow-bottom-blue-lessbright.png"
+                                  class="cxjf2"
+                                  width="2146"
+                                  height="774"
+                                  alt="Hero Illustration"
+                                />
+                              </div>
+                            </div>
+                            <!-- Radial gradient -->
+                            <!-- <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cucbd cbixb cqedr"
+                                                        aria-hidden="true">
+                                                        <div class="c0wqh cl2cn c9pxh cky3t ctqkp ctwv8"></div>
+                                                    </div> -->
+                            <!-- Text -->
+                            <div class="c2te9 cw4n2 clcaa cb16y chnvr cl1ed cjanb">
+                              <div>
+                                <h3 class="cwkz6 cmmug cr2fi chaw1 ch3zp cicf4 c1mbe c9qka cokyf cjeaj">Winner</h3>
+                                <p class="cfoch">INR 10,000 + prizes for everyone</p>
+                              </div>
+                            </div>
+                            <!-- Image -->
+                            <div class="ca60c cogav cytoa co970 c926l cq699">
+                              <img
+                                class="cl2cn cl2el cddhp cknuf cxjf2 cbixb cu5fu c9jv3 c41ju c11ot"
+                                src="./asset/stellar/images/feature-image-03.png"
+                                width="230"
+                                height="230"
+                                alt="Feature 03"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Box #3 -->
+                    <div class="cy7um" data-aos="fade-down">
+                      <div
+                        class="ca60c c0tib co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 cahiq"
+                      >
+                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                          <div class="cs2x1 c8rkc">
+                            <div
+                              class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cpa88"
+                              style="filter: brightness(50%)"
+                              aria-hidden="true"
+                            >
+                              <div class="cl2cn cl2el cddhp c0mvq cbixb">
+                                <img
+                                  src="./asset/stellar/images/glow-bottom-blue-lessbright.png"
+                                  class="cxjf2"
+                                  width="2146"
+                                  height="774"
+                                  alt="Hero Illustration"
+                                />
+                              </div>
+                            </div>
+                            <!-- Radial gradient -->
+                            <!-- <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cucbd cbixb cqedr"
+                                                          aria-hidden="true">
+                                                          <div class="c0wqh cl2cn c9pxh cky3t ctqkp ctwv8"></div>
+                                                      </div> -->
+                            <!-- Text -->
+                            <div class="c2te9 cw4n2 clcaa cb16y chnvr cl1ed cjanb">
+                              <div>
+                                <h3 class="cwkz6 cmmug cr2fi chaw1 ch3zp cicf4 c1mbe c9qka cokyf cjeaj">Winner</h3>
+                                <p class="cfoch">INR 10,000 + prizes for everyone</p>
+                              </div>
+                            </div>
+                            <!-- Image -->
+                            <div class="ca60c cogav cytoa co970 c926l cq699">
+                              <img
+                                class="cl2cn cl2el cddhp cknuf cxjf2 cbixb cu5fu c9jv3 c41ju c11ot"
+                                src="./asset/stellar/images/feature-image-03.png"
+                                width="230"
+                                height="230"
+                                alt="Feature 03"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Features list -->
+                <div class="cknuf cz30m cz74e c1xp8 cpnha" id="themes">
+                  <h2 class="cr09c cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj">Themes</h2>
+                  <p class="cd2du cfoch">
+                    Explore diverse challenges and unleash your creativity with our carefully curated themes.<br /><b
+                      >One hack at a time.</b
+                    >
+                  </p>
+                </div>
+                <div class="cq0og cld7d c5rb1 clfvo">
+                  <!-- Feature -->
+                  <div>
+                    <div class="ceq85 cs2x1 cxwsr cmru4">
+                      <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                        <path
+                          d="M7.999 2.34a4.733 4.733 0 0 0-6.604 6.778l5.904 5.762a1 1 0 0 0 1.4 0l5.915-5.77a4.733 4.733 0 0 0-6.615-6.77Zm5.208 5.348-5.208 5.079-5.2-5.07a2.734 2.734 0 0 1 3.867-3.864c.182.19.335.404.455.638a1.04 1.04 0 0 0 1.756 0 2.724 2.724 0 0 1 5.122 1.294 2.7 2.7 0 0 1-.792 1.923Z"
+                        ></path>
+                      </svg>
+                      <h4 class="ciph8 crdoi">Open Innovation</h4>
+                    </div>
+                    <p class="cqnsz cfoch">
+                      Collaborate across boundaries to devise innovative solutions that challenge norms and drive
+                      progress.
+                    </p>
+                  </div>
+                  <!-- Feature -->
+                  <div>
+                    <div class="ceq85 cs2x1 cxwsr cmru4">
+                      <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                        <path
+                          d="M11 0c1.3 0 2.6.5 3.5 1.5 1 .9 1.5 2.2 1.5 3.5 0 1.3-.5 2.6-1.4 3.5l-1.2 1.2c-.2.2-.5.3-.7.3-.2 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l1.1-1.2c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.2C12 1.7 10 1.7 8.9 2.8L7.7 4c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4l1.2-1.1C8.4.5 9.7 0 11 0ZM8.3 12c.4-.4 1-.5 1.4-.1.4.4.4 1 0 1.4l-1.2 1.2C7.6 15.5 6.3 16 5 16c-1.3 0-2.6-.5-3.5-1.5C.5 13.6 0 12.3 0 11c0-1.3.5-2.6 1.5-3.5l1.1-1.2c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L2.9 8.9c-.6.5-.9 1.3-.9 2.1s.3 1.6.9 2.2c1.1 1.1 3.1 1.1 4.2 0L8.3 12Zm1.1-6.8c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-4.2 4.2c-.2.2-.5.3-.7.3-.2 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l4.2-4.2Z"
+                        ></path>
+                      </svg>
+                      <h4 class="ciph8 crdoi">Web3</h4>
+                    </div>
+                    <p class="cqnsz cfoch">
+                      Shape the decentralized internet with blockchain-powered applications that prioritize privacy and
+                      security.
+                    </p>
+                  </div>
+                  <!-- Feature -->
+                  <div>
+                    <div class="ceq85 cs2x1 cxwsr cmru4">
+                      <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                        <path
+                          d="M14 0a2 2 0 0 1 2 2v4a1 1 0 0 1-2 0V2H2v12h4a1 1 0 0 1 0 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12Zm-1.957 10.629 3.664 3.664a1 1 0 0 1-1.414 1.414l-3.664-3.664-.644 2.578a.5.5 0 0 1-.476.379H9.5a.5.5 0 0 1-.48-.362l-2-7a.5.5 0 0 1 .618-.618l7 2a.5.5 0 0 1-.017.965l-2.578.644Z"
+                        ></path>
+                      </svg>
+                      <h4 class="ciph8 crdoi">AI/ML</h4>
+                    </div>
+                    <p class="cqnsz cfoch">
+                      Unleash the power of AI/ML and revolutionize industries with cutting-edge algorithms and
+                      predictive models.
+                    </p>
+                  </div>
+                  <!-- Feature -->
+                  <!-- <div>
+                    <div class="ceq85 cs2x1 cxwsr cmru4">
+                      <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                        <path
+                          d="M14.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-8 8c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l8-8ZM15 7c.6 0 1 .4 1 1 0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8c.6 0 1 .4 1 1s-.4 1-1 1C4.7 2 2 4.7 2 8s2.7 6 6 6 6-2.7 6-6c0-.6.4-1 1-1Z"
+                        ></path>
+                      </svg>
+                      <h4 class="ciph8 crdoi">AR/VR</h4>
+                    </div>
+                    <p class="cqnsz cfoch">
+                      Immerse users in virtual realms, creating new experiences that blur the line between real and
+                      digital worlds.
+                    </p>
+                  </div> -->
+                  <!-- Feature -->
+                  <!-- <div>
+                                <div class="ceq85 cs2x1 cxwsr cmru4">
+                                    <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                        <path
+                                            d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12Zm0 14V2H2v12h12Zm-3-7H5a1 1 0 1 1 0-2h6a1 1 0 0 1 0 2Zm0 4H5a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Z">
+                                        </path>
+                                    </svg>
+                                    <h4 class="ciph8 crdoi">Track 5</h4>
+                                </div>
+                                <p class="cqnsz cfoch">Login box must find the right balance for the user convenience,
+                                    privacy and security.</p>
+                            </div> -->
+                  <!-- Feature -->
+                  <!-- <div>
+                                <div class="ceq85 cs2x1 cxwsr cmru4">
+                                    <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                        <path
+                                            d="M14.574 5.67a13.292 13.292 0 0 1 1.298 1.842 1 1 0 0 1 0 .98C15.743 8.716 12.706 14 8 14a6.391 6.391 0 0 1-1.557-.2l1.815-1.815C10.97 11.82 13.06 9.13 13.82 8c-.163-.243-.39-.56-.669-.907l1.424-1.424ZM.294 15.706a.999.999 0 0 1-.002-1.413l2.53-2.529C1.171 10.291.197 8.615.127 8.49a.998.998 0 0 1-.002-.975C.251 7.29 3.246 2 8 2c1.331 0 2.515.431 3.548 1.038L14.293.293a.999.999 0 1 1 1.414 1.414l-14 14a.997.997 0 0 1-1.414 0ZM2.18 8a12.603 12.603 0 0 0 2.06 2.347l1.833-1.834A1.925 1.925 0 0 1 6 8a2 2 0 0 1 2-2c.178 0 .348.03.512.074l1.566-1.566C9.438 4.201 8.742 4 8 4 5.146 4 2.958 6.835 2.181 8Z">
+                                        </path>
+                                    </svg>
+                                    <h4 class="ciph8 crdoi">Track 6</h4>
+                                </div>
+                                <p class="cqnsz cfoch">Login box must find the right balance for the user convenience,
+                                    privacy and security.</p>
+                            </div> -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Timeline -->
+          <section class="ca60c" id="timeline">
+            <!-- Particles animation -->
+            <div class="cl2cn cddhp c2aec c0mvq cvb2e cclmt c2khh ca67m cbixb">
+              <div class="cl2cn c9pxh c0mvq" aria-hidden="true">
+                <canvas data-particle-animation="" data-particle-quantity="6" data-particle-staticity="30"></canvas>
+              </div>
+            </div>
+
+            <div class="cknuf chyag ck7tl cj5a0">
+              <div class="c4w2r ctga0">
+                <!-- Section header -->
+                <div class="cknuf cz30m cz74e c1xp8 cpnha">
+                  <h2 class="cr09c cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj">Timeline</h2>
+                  <p class="cd2du cfoch">
+                    Stay on track with key dates and events to make the most of your Aurora experience. <br /><b
+                      >Stay tuned!</b
+                    >
+                  </p>
+                </div>
+
+                <!-------------------------------------------TIMELINE----------------------------------------------------->
+                <!-- <img src="./asset/stellar/images/TBA1.png" alt="timeline" class="tba-image"> -->
+                <!-- <img src="./asset/stellar/images/TBA2.png" alt="timeline" class="tba2-image"> -->
+
+                <div class="pb-10">
+                  <div class="mt-1 pb-4">
+                    <div class="container">
+                      <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
+                        <div class="flex md:contents">
+                          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                            <div class="h-full w-6 flex items-center justify-center">
+                              <div class="h-full w-1 bg-gradient-to-t from-[#1C3A4E] pointer-events-none"></div>
+                            </div>
+                            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full text-center">
+                              <i class="fas fa-check-circle text-gray-400"></i>
+                            </div>
+                          </div>
+                          <div
+                            class="bg-gradient-to-r from-[#255366] col-start-4 col-end-11 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+                          >
+                            <h3 class="font-semibold text-lg mb-1">Registrations</h3>
+                            <p class="leading-tight text-justify w-full">1 SEPT - 3 OCT , 11:59 PM</p>
+                          </div>
+                        </div>
+
+                        <div class="flex md:contents">
+                          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                            <div class="h-full w-6 flex items-center justify-center">
+                              <div class="h-full w-1 bg-[#1C3A4E] pointer-events-none"></div>
+                            </div>
+                            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full text-center">
+                              <i class="fas fa-exclamation-circle text-gray-400"></i>
+                            </div>
+                          </div>
+                          <div
+                            class="bg-gradient-to-r from-[#15283B] col-start-4 col-end-11 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+                          >
+                            <h3 class="font-semibold text-lg mb-1">Hack Start</h3>
+                            <p class="leading-tight text-justify">4 OCT, 12:00 PM</p>
+                          </div>
+                        </div>
+
+                        <div class="flex md:contents">
+                          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                            <div class="h-full w-6 flex items-center justify-center">
+                              <div class="h-full w-1 bg-[#1C3A4E] pointer-events-none"></div>
+                            </div>
+                            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full text-center">
+                              <i class="fas fa-exclamation-circle text-gray-400"></i>
+                            </div>
+                          </div>
+                          <div
+                            class="bg-gradient-to-r from-[#255366] col-start-4 col-end-11 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+                          >
+                            <h3 class="font-semibold text-lg mb-1 text-gray-50">Hack End</h3>
+                            <p class="leading-tight text-justify">7 OCT, 12:00 PM</p>
+                          </div>
+                        </div>
+
+                        <div class="flex md:contents">
+                          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                            <div class="h-full w-6 flex items-center justify-center">
+                              <div class="h-full w-1 bg-gradient-to-b from-[#1C3A4E] pointer-events-none"></div>
+                            </div>
+                            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full text-center">
+                              <i class="fas fa-exclamation-circle text-gray-400"></i>
+                            </div>
+                          </div>
+                          <div
+                            class="bg-gradient-to-r from-[#15283B] col-start-4 col-end-11 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+                          >
+                            <h3 class="font-semibold text-lg mb-1 text-gray-400">Results: 10 OCT</h3>
+                            <p class="leading-tight text-justify"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <style>
+                  /* .tba-image{
+                                        border: 1px solid rgba(87, 71, 71, 0.558);
+                                        border-radius: 22px;
+                                    } */
+                  /* .tba2-image{
+                                        display: none;
+                                    } */
+                  @media only screen and (max-width: 600px) {
+                    /* .tba-image{
+                                            display: none;
+                                        }
+                                        .tba2-image{
+                                            display: block;
+                                            border-radius: 22px;
+                                            border: 1px solid rgba(87, 71, 71, 0.558);
+                                        } */
+                  }
+                </style>
+                <!-- Box #2 -->
+                <!-- <div class="cid9a" data-aos="fade-down">
+                                    <div
+                                        class="ca60c c0tib co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 cahiq">
+                                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                                            <div class="cs2x1 c8rkc">
+                                                <div class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cpa88" style="filter:brightness(50%)" aria-hidden="true">
+                                                    <div class="cl2cn cl2el cddhp c0mvq cbixb">
+                                                        <img src="./asset/stellar/images/glow-bottom-blue-lessbright.png" class="cxjf2" width="2146" height="774" alt="Hero Illustration">
+                                                    </div>
+                                                </div> -->
+                <!-- Radial gradient -->
+                <!-- <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cucbd cbixb cqedr"
+                                                    aria-hidden="true">
+                                                    <div class="c0wqh cl2cn c9pxh cky3t ctqkp ctwv8"></div>
+                                                </div> -->
+                <!-- Text -->
+                <!-- <div class="c2te9 cw4n2 clcaa cb16y chnvr cl1ed cjanb">
+                                                    <div>
+                                                        <h3
+                                                            class="cwkz6 cmmug cr2fi chaw1 ch3zp cicf4 c1mbe c9qka cokyf cjeaj">Second Prize</h3>
+                                                        <p class="cfoch">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi delectus mollitia vitae quam aliquam distinctio? Aperiam animi ipsa doloremque, commodi asperiores illo magnam magni maxime quidem repellendus beatae autem voluptas?</p>
+                                                    </div>
+                                                </div> -->
+                <!-- Image -->
+                <!-- <div class="ca60c cogav cytoa co970 c926l cq699">
+                                                    <img class="cl2cn cl2el cddhp cknuf cxjf2 cbixb cu5fu c9jv3 c41ju c11ot"
+                                                        src="./asset/stellar/images/feature-image-02.png"
+                                                        width="536" height="230" alt="Feature 02">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                <!-- Box #3 -->
+                <!-- <div class="cy7um" data-aos="fade-down">
+                                    <div
+                                        class="ca60c c0tib co970 cjbis ctqkp cdgtm cm39l cc4v0 cuze9 cvrel czub9 cu486 cp5f4 cs5rb cprit ch9g6 cpt2o cb0qf c2vtn chx0y c1e1k cysd2 cgxgf cv2ch caiin cegds cb5el cd6it cxa15 chaq6 cahiq">
+                                        <div class="ca60c c64tv c0tib co970 chrb3 cp73f">
+                                            <div class="cs2x1 c8rkc">
+                                                <div class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cpa88" style="filter:brightness(50%)" aria-hidden="true">
+                                                    <div class="cl2cn cl2el cddhp c0mvq cbixb">
+                                                        <img src="./asset/stellar/images/glow-bottom-blue-lessbright.png" class="cxjf2" width="2146" height="774" alt="Hero Illustration">
+                                                    </div>
+                                                </div> -->
+                <!-- Radial gradient -->
+                <!-- <div class="c431g cl2cn cl2el cddhp c0mvq cmfhc cucbd cbixb cqedr"
+                                                    aria-hidden="true">
+                                                    <div class="c0wqh cl2cn c9pxh cky3t ctqkp ctwv8"></div>
+                                                </div> -->
+                <!-- Text -->
+                <!-- <div class="c2te9 cw4n2 clcaa cb16y chnvr cl1ed cjanb">
+                                                    <div>
+                                                        <h3
+                                                            class="cwkz6 cmmug cr2fi chaw1 ch3zp cicf4 c1mbe c9qka cokyf cjeaj">Third Prize</h3>
+                                                        <p class="cfoch">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa porro ipsum qui provident eaque! Architecto modi libero dolore neque voluptatum tenetur cumque, nam quam vel officia minus, totam saepe pariatur.</p>
+                                                    </div> -->
+                <!-- </div> -->
+                <!-- Image -->
+                <!-- <div class="ca60c cogav cytoa co970 c926l cq699">
+                                                    <img class="cl2cn cl2el cddhp cknuf cxjf2 cbixb cu5fu c9jv3 c41ju c11ot"
+                                                        src="./asset/stellar/images/feature-image-03.png"
+                                                        width="230" height="230" alt="Feature 03">
+                                                </div> -->
+                <!-- </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+              </div>
+            </div>
+          </section>
+
+          <section class="ca60c" id="mentors">
+            <!-- Blurred shape -->
+            <div class="c431g cl2cn cddhp c2aec c0mvq cbixb curw3 cluw3 citek" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                <defs>
+                  <lineargradient id="bs3-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                    <stop offset="0%" stop-color="#1AB4B0"></stop>
+                    <stop offset="100%" stop-color="#6366F1" stop-opacity="0"></stop>
+                  </lineargradient>
+                </defs>
+                <path
+                  fill="url(#bs3-a)"
+                  fill-rule="evenodd"
+                  d="m410 0 461 369-284 58z"
+                  transform="matrix(1 0 0 -1 -410 427)"
+                ></path>
+              </svg>
+            </div>
+
+            <!-- <div class="cknuf chyag ck7tl cj5a0">
+              <div class="cw8rx c3ebo cz74e c4w2r cpnha ctga0"> -->
+                <!-- Section header -->
+                <!-- <div class="cknuf cz30m cz74e c1xp8 cpnha">
+                  <h2 class="cr09c cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj">Meet Our Speakers & Mentors</h2>
+                  <p class="cd2du cfoch">
+                    Discover the experts shaping the future of Web3 and inspiring the next generation of tech leaders.
+                  </p>
+                </div>
+
+                <div class="cknuf cz30m ck7tl cj5a0">
+                  <div class="ca60c cz74e cpnha"> -->
+                    <!-- Particles animation -->
+                    <!-- <div class="cl2cn cddhp c2aec c0mvq csy0a c2khh ca67m cbixb">
+                      <div class="cl2cn c9pxh c0mvq" aria-hidden="true">
+                        <canvas
+                          data-particle-animation=""
+                          data-particle-quantity="10"
+                          data-particle-staticity="30"
+                        ></canvas>
+                      </div>
+                    </div> -->
+
+                    <!-- Carousel -->
+                    <!-- <div class="c1xp8" x-data="carousel"> -->
+                      <!-- Testimonial image -->
+                      <!-- <div class="ca60c c3kur c92df"> -->
+                        <!-- <div
+                          class="c431g cl2cn cddhp c2aec c0mvq cw489 c7pw1 cbixb cky3t cc4v0 cqez1 ctajg ch9g6 cn2me c8yob c8u7w cy3ub cysd2 cgxgf cezux crfzi cvayk cz7tq"
+                        > -->
+                          <!-- Alpine.js template for testimonial images: https://github.com/alpinejs/alpine#x-for -->
+                          <!-- <template x-for="(item, index) in items" :key="index">
+                            <div
+                              x-show="active === index"
+                              class="cl2cn c9pxh c0mvq"
+                              x-transition:enter="cco4s cowqa c1btp cemb7"
+                              x-transition:enter-start="c11y1 cceml"
+                              x-transition:enter-end="ccdnp c09ga"
+                              x-transition:leave="cco4s cowqa c1btp"
+                              x-transition:leave-start="ccdnp c09ga"
+                              x-transition:leave-end="c11y1 clrih"
+                            >
+                              <img
+                                class="ca60c cddhp c1yxx cbixb cky3t"
+                                :src="item.img"
+                                width="56"
+                                height="56"
+                                :alt="item.name"
+                                src="https://preview.cruip.com/"
+                              />
+                            </div>
+                          </template>
+                        </div>
+                      </div> -->
+
+                      <!-- Text -->
+                      <!-- Speakers and Mentors -->
+
+                      <!-- <div class="ccjis">
+                        <div class="ca60c cs2x1 c8rkc ctg4d cbf6n cykc9 c2rol" x-ref="testimonials"> -->
+                          <!-- Alpine.js template for testimonials: https://github.com/alpinejs/alpine#x-for -->
+                          <!-- <template x-for="(item, index) in items" :key="index">
+                            <div
+                              x-show="active === index"
+                              x-transition:enter="cco4s c2rol cqp1f c37c4 cemb7"
+                              x-transition:enter-start="c11y1 cvfij"
+                              x-transition:enter-end="ccdnp cqeai"
+                              x-transition:leave="cco4s cd083 ce7oy cbf6n cl2cn"
+                              x-transition:leave-start="ccdnp cqeai"
+                              x-transition:leave-end="c11y1 cheat"
+                            >
+                              <div class="cmmug cr2fi chaw1 ch3zp cicf4 c9qka cokyf cjeaj" x-text="item.quote"></div>
+                            </div>
+                          </template>
+                        </div>
+                      </div> -->
+                      <!-- Buttons -->
+                      <!-- <div class="cu5ju cs2x1 cj38p crt5c"> -->
+                        <!-- Alpine.js template for buttons: https://github.com/alpinejs/alpine#x-for -->
+                        <!-- <template x-for="(item, index) in items" :key="index">
+                          <button
+                            class="clnk2 ca60c ctg6m c78up c6gxk cuxtl cco4s cykc9 c2rol cuogv cm39l cc4v0 cqez1 ch9g6 cypz5"
+                            :class="active === index ? 'ccdnp' : 'c7gz7 c0p6z'"
+                            @click="active = index; stopAutorotate();"
+                          >
+                            <span class="ca60c">
+                              <span class="crdoi" x-text="item.name"></span> <span class="ctd13">-</span>
+                              <span x-text="item.role"></span>
+                            </span>
+                          </button>
+                        </template>
+                      </div>
+                    </div> -->
+                    <!-- Carousel data and functionality: https://github.com/alpinejs/alpine -->
+                    <!-- <script>
+                      document.addEventListener("alpine:init", () => {
+                        Alpine.data("carousel", () => ({
+                          active: 0,
+                          autorotate: true,
+                          autorotateTiming: 7000,
+                          items: [
+                            {
+                              img: "./images/testimonial-01.jpg",
+                              quote:
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia quam eaque exercitationem iure vitae excepturi beatae reprehen",
+                              name: "Speaker 1",
+                              role: "Role 1",
+                            },
+                            {
+                              img: "./images/testimonial-02.jpg",
+                              quote:
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia quam eaque exercitationem iure vitae excepturi beatae reprehen",
+                              name: "Speaker 2",
+                              role: "Role 2",
+                            },
+                            {
+                              img: "./images/testimonial-03.jpg",
+                              quote:
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia quam eaque exercitationem iure vitae excepturi beatae reprehen",
+                              name: "Speaker 3",
+                              role: "Role 3",
+                            },
+                          ],
+                          init() {
+                            if (this.autorotate) {
+                              this.autorotateInterval = setInterval(() => {
+                                this.active = this.active + 1 === this.items.length ? 0 : this.active + 1;
+                              }, this.autorotateTiming);
+                            }
+                            this.$watch("active", (callback) => this.heightFix());
+                          },
+                          stopAutorotate() {
+                            clearInterval(this.autorotateInterval);
+                            this.autorotateInterval = null;
+                          },
+                          heightFix() {
+                            this.$nextTick(() => {
+                              this.$refs.testimonials.style.height =
+                                this.$refs.testimonials.children[this.active + 1].offsetHeight + "px";
+                            });
+                          },
+                        }));
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+          </section>
+          <!-- Features #3 -->
+          <section id="sponsors">
+            <div class="ca60c cknuf chyag ck7tl cj5a0">
+              <!-- Illustration -->
+              <div class="c431g cl2cn c9pxh c0mvq cr2p6 co970 cu7zb" aria-hidden="true">
+                <div class="cl2cn cddhp c2aec c0mvq cbixb">
+                  <img
+                    src="./asset/stellar/images/glow-top-blue.png"
+                    class="cxjf2"
+                    width="1404"
+                    height="658"
+                    alt="Features Illustration"
+                  />
+                </div>
+              </div>
+              <!-- Blurred shape -->
+              <div class="c431g cl2cn cddhp c2aec c0mvq cbixb curw3 cluw3 citek" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                  <defs>
+                    <lineargradient id="bs3-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                      <stop offset="0%" stop-color="#1AB4B0"></stop>
+                      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"></stop>
+                    </lineargradient>
+                  </defs>
+                  <path
+                    fill="url(#bs3-a)"
+                    fill-rule="evenodd"
+                    d="m410 0 461 369-284 58z"
+                    transform="matrix(1 0 0 -1 -410 427)"
+                  ></path>
+                </svg>
+              </div>
+
+              <div class="cz74e c4w2r cpnha cxnp8">
+                <div x-data="{ tab: '1' }">
+                  <!-- Section content -->
+                  <div class="cknuf cs2x1 cpmx3 c8rkc c4kk7 ckhk3 c85ax cg7n6 cy4yt cucdv cqvnx ctyej">
+                    <!-- Content -->
+                    <div class="c2te9 c2ayy chnvr cpign cxh4y" data-aos="fade-down">
+                      <!-- Content #1 -->
+                      <!-- Platinum Sponsor Content -->
+                      <div>
+                        <div class="cwkz6 cmmug cpb1t c6mtw cicf4 c0xld ciph8 cjeaj">Architects of Aurora</div>
+                      </div>
+                      <h3 class="ckomn cmmug cr2fi chaw1 ch3zp cicf4 c0xld cjeaj">Backed by</h3>
+                      <div class="cxce1 chnsh cb8dn ceghp">
+                        <!--
+-----------------------------------------Use this to add a button and change the tab number for associated graphic -------------------------------------------------------
+
+<button class="cs2x1 cytoa cxwsr c8r68 cv8z6 c0uj7 csc0h cagov cqnsz ciph8 crdoi cco4s cykc9 c2rol cikge cxwxt cngu6 c02g1"
+    :class="tab !== '4' ? 'c91qe cluw3' : 'cxwxt cngu6 c02g1'" @click.prevent="tab = '4'">
+    <span>Show/Hide Graphic</span>
+</button>
+-->
+                        <button
+                          class="cs2x1 cytoa cxwsr c8r68 cv8z6 c0uj7 csc0h cagov cqnsz ciph8 crdoi cco4s cykc9 c2rol cikge"
+                          :class="tab !== '1' ? 'c91qe cluw3' : 'cxwxt cngu6 c02g1'"
+                          @click.prevent="tab = '1'"
+                        >
+                          <img class="mr-2" width="40" src="./images/clubs/logo.png" />
+                          <span>ElixirTechCommunity</span>
+                        </button>
+
+                        <button
+                          class="cs2x1 cytoa cxwsr c8r68 cv8z6 c0uj7 csc0h cagov cqnsz ciph8 crdoi cco4s cykc9 c2rol cikge"
+                          :class="tab !== '2' ? 'c91qe cluw3' : 'cxwxt cngu6 c02g1'"
+                          @click.prevent="tab = '2'"
+                        >
+                          <img class="mr-2" width="40" src="./images/clubs/gfg.png" />
+                          <span>GeeksforGeeks ABESEC</span>
+                        </button>
+                        <button
+                          class="cs2x1 cytoa cxwsr c8r68 cv8z6 c0uj7 csc0h cagov cqnsz ciph8 crdoi cco4s cykc9 c2rol cikge"
+                          :class="tab !== '3' ? 'c91qe cluw3' : 'cxwxt cngu6 c02g1'"
+                          @click.prevent="tab = '3'"
+                        >
+                          <img class="ml-1 mr-2" width="40" src="./images/clubs/cc.png" />
+                          <span> CodeChef ABESEC</span>
+                        </button>
+                        <button
+                          class="cs2x1 cytoa cxwsr c8r68 cv8z6 c0uj7 csc0h cagov cqnsz ciph8 crdoi cco4s cykc9 c2rol cikge"
+                          :class="tab !== '4' ? 'c91qe cluw3' : 'cxwxt cngu6 c02g1'"
+                          @click.prevent="tab = '4'"
+                        >
+                          <img class="ml-1 mr-2" width="40" src="./images/clubs/gdsc.png" />
+                          <span>GDSC ABESEC</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="c27yn cxh4y" data-aos="fade-up" data-aos-delay="100">
+                      <div class="ca60c cejs8 c6cak">
+                        <!-- Particles animation -->
+                        <div class="cl2cn c9pxh c0mvq">
+                          <canvas
+                            data-particle-animation=""
+                            data-particle-quantity="8"
+                            data-particle-staticity="30"
+                          ></canvas>
+                        </div>
+
+                        <div class="cs2x1 cxwsr crt5c">
+                          <div class="ca60c cs2x1 ctrzp cjkfk cxwsr crt5c">
+                            <!-- Halo effect -->
+                            <svg
+                              class="c431g cl2cn c9pxh cddhp crsw9 cbixb ch5up ciusd cn1jl c0xh0"
+                              width="480"
+                              height="480"
+                              viewbox="0 0 480 480"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <defs>
+                                <lineargradient id="pulse-a" x1="50%" x2="50%" y1="100%" y2="0%">
+                                  <stop offset="0%" stop-color="#1AB4B0"></stop>
+                                  <stop offset="76.382%" stop-color="#FAF5FF"></stop>
+                                  <stop offset="100%" stop-color="#1cf2ab"></stop>
+                                </lineargradient>
+                              </defs>
+                              <g fill-rule="evenodd">
+                                <path
+                                  class="c75d5"
+                                  fill="url(#pulse-a)"
+                                  fill-rule="evenodd"
+                                  d="M240,0 C372.5484,0 480,107.4516 480,240 C480,372.5484 372.5484,480 240,480 C107.4516,480 0,372.5484 0,240 C0,107.4516 107.4516,0 240,0 Z M240,88.8 C156.4944,88.8 88.8,156.4944 88.8,240 C88.8,323.5056 156.4944,391.2 240,391.2 C323.5056,391.2 391.2,323.5056 391.2,240 C391.2,156.4944 323.5056,88.8 240,88.8 Z"
+                                ></path>
+                                <path
+                                  class="c75d5 ci2pq"
+                                  fill="url(#pulse-a)"
+                                  fill-rule="evenodd"
+                                  d="M240,0 C372.5484,0 480,107.4516 480,240 C480,372.5484 372.5484,480 240,480 C107.4516,480 0,372.5484 0,240 C0,107.4516 107.4516,0 240,0 Z M240,88.8 C156.4944,88.8 88.8,156.4944 88.8,240 C88.8,323.5056 156.4944,391.2 240,391.2 C323.5056,391.2 391.2,323.5056 391.2,240 C391.2,156.4944 323.5056,88.8 240,88.8 Z"
+                                ></path>
+                                <path
+                                  class="c75d5 cojy9"
+                                  fill="url(#pulse-a)"
+                                  fill-rule="evenodd"
+                                  d="M240,0 C372.5484,0 480,107.4516 480,240 C480,372.5484 372.5484,480 240,480 C107.4516,480 0,372.5484 0,240 C0,107.4516 107.4516,0 240,0 Z M240,88.8 C156.4944,88.8 88.8,156.4944 88.8,240 C88.8,323.5056 156.4944,391.2 240,391.2 C323.5056,391.2 391.2,323.5056 391.2,240 C391.2,156.4944 323.5056,88.8 240,88.8 Z"
+                                ></path>
+                              </g>
+                            </svg>
+                            <!-- Grid -->
+                            <div class="c431g cl2cn c9pxh cddhp crsw9 cxwvo cr6m4 cbixb ch5up ciusd co970 cky3t cgjd2">
+                              <div class="c99zm cy9m5">
+                                <div class="cl2cn c9pxh cl0sl c6qdr c9kso"></div>
+                                <div class="cl2cn c9pxh czz23"></div>
+                                <div class="cl2cn c9pxh cl0sl c6qdr c686l"></div>
+                                <div class="cl2cn c9pxh codp6"></div>
+                              </div>
+                            </div>
+                            <!-- Icons -->
+                            <!-- <<<<<<< FAQs -->
+
+                            <!-- ======= -->
+                            <!-- Platinum Sponsors Logo -->
+
+                            <!-- >>>>>>> main -->
+                            <div
+                              x-show="tab === '1'"
+                              x-transition:enter="cco4s cowqa c1btp cemb7"
+                              x-transition:enter-start="c11y1 cceml"
+                              x-transition:enter-end="ccdnp c09ga"
+                              x-transition:leave="cco4s cowqa c1btp cl2cn"
+                              x-transition:leave-start="ccdnp c09ga"
+                              x-transition:leave-end="c11y1 clrih"
+                            >
+                              <div class="ca60c cs2x1 h-[9em] flex flex-col justify-center items-center">
+                                <img src="./images/clubs/logo.png" alt="Platinum Sponsor Logo 1" />
+                                <span class="font-semibold text-2xl text-gray-300 text-center leading-none"
+                                  >Elixir Tech <br />
+                                  Community</span
+                                >
+                              </div>
+                            </div>
+                            <div
+                              x-show="tab === '2'"
+                              x-transition:enter="cco4s cowqa c1btp cemb7"
+                              x-transition:enter-start="c11y1 cceml"
+                              x-transition:enter-end="ccdnp c09ga"
+                              x-transition:leave="cco4s cowqa c1btp cl2cn"
+                              x-transition:leave-start="ccdnp c09ga"
+                              x-transition:leave-end="c11y1 clrih"
+                            >
+                              <div class="ca60c cs2x1">
+                                <img src="./images/clubs/gfg.png" />
+                              </div>
+                            </div>
+                            <div
+                              x-show="tab === '3'"
+                              x-transition:enter="cco4s cowqa c1btp cemb7"
+                              x-transition:enter-start="c11y1 cceml"
+                              x-transition:enter-end="ccdnp c09ga"
+                              x-transition:leave="cco4s cowqa c1btp cl2cn"
+                              x-transition:leave-start="ccdnp c09ga"
+                              x-transition:leave-end="c11y1 clrih"
+                            >
+                              <div class="ca60c cs2x1">
+                                <img src="./images/clubs/cc.png" />
+                              </div>
+                            </div>
+                            <div
+                              x-show="tab === '4'"
+                              x-transition:enter="cco4s cowqa c1btp cemb7"
+                              x-transition:enter-start="c11y1 cceml"
+                              x-transition:enter-end="ccdnp c09ga"
+                              x-transition:leave="cco4s cowqa c1btp cl2cn"
+                              x-transition:leave-start="ccdnp c09ga"
+                              x-transition:leave-end="c11y1 clrih"
+                            >
+                              <div class="ca60c cs2x1">
+                                <img src="./images/clubs/gdsc.png" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Features #4 -->
+          <section class="ca60c" id="faq">
+            <div class="ca60c cknuf chyag ck7tl cj5a0">
+              <!-- Blurred shape -->
+              <div class="c431g cl2cn clndv c2aec c0mvq cim0s cclmt cx692 citek" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                  <defs>
+                    <lineargradient id="bs4-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                      <stop offset="0%" stop-color="#1AB4B0"></stop>
+                      <stop offset="100%" stop-color="#1AB4B0" stop-opacity="0"></stop>
+                    </lineargradient>
+                  </defs>
+                  <path
+                    fill="url(#bs4-a)"
+                    fill-rule="evenodd"
+                    d="m0 0 461 369-284 58z"
+                    transform="matrix(1 0 0 -1 0 427)"
+                  ></path>
+                </svg>
+              </div>
+
+              <div class="cz74e c4w2r cpnha ctga0">
+                <!-- Section header -->
+                <div class="cz30m cz74e cpnha">
+                  <h2 class="cr09c cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj">You got some Qs, We have the As</h2>
+                  <p class="cd2du cfoch ml-2">Got questions? Find quick answers here.</p>
+                </div>
+
+                <!-- Rows -->
+                <div class="c9aqo cw6m1">
+                  <!-- Row -->
+                  <div class="cpb5v c9c9x cj4vv">
+                    <!-- <div>
+                                    <div class="cwkz6 cmmug cpb1t c6mtw cicf4 camr2 ciph8 cjeaj"></div>
+                                </div> -->
+                    <div class="cjvyj cq0og cld7d c5rb1 clfvo question-container">
+                      <!-- Feature -->
+                      <div>
+                        <div class="ceq85 cs2x1 cxwsr cmru4">
+                          <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path
+                              d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z"
+                            ></path>
+                          </svg>
+                          <h4 class="ciph8 crdoi">Who can participate in the Hackathon?</h4>
+                        </div>
+                        <p class="cqnsz cfoch">
+                          All undergraduate students in the region, regardless of discipline, experience, or skills, are
+                          welcome to participate, requiring only an inquisitive mind and a willingness to learn.
+                        </p>
+                      </div>
+                      <!-- Feature -->
+                      <div>
+                        <div class="ceq85 cs2x1 cxwsr cmru4">
+                          <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path
+                              d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z"
+                            ></path>
+                          </svg>
+                          <h4 class="ciph8 crdoi">What is the registration Procedure?</h4>
+                        </div>
+                        <p class="cqnsz cfoch">
+                          Registrations are Live on Devfolio, "Apply With Devfolio" button is present on the front page
+                          of website
+                        </p>
+                      </div>
+                      <!-- Feature -->
+                      <div>
+                        <div class="ceq85 cs2x1 cxwsr cmru4">
+                          <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path
+                              d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z"
+                            ></path>
+                          </svg>
+                          <h4 class="ciph8 crdoi">Is there any Registration fee ?</h4>
+                        </div>
+                        <p class="cqnsz cfoch">
+                          Participation in Aurora Hackathon is completely free. All we ask for is your time, enthusiasm,
+                          and creative efforts.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Row -->
+                  <div class="cpb5v">
+                    <!-- <div>
+                                    <div class="cwkz6 cmmug cpb1t c6mtw cicf4 camr2 ciph8 cjeaj"></div>
+                                </div> -->
+                    <div class="cjvyj cq0og cld7d c5rb1 clfvo question-container">
+                      <!-- Feature -->
+                      <div>
+                        <div class="ceq85 cs2x1 cxwsr cmru4">
+                          <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path
+                              d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z"
+                            ></path>
+                          </svg>
+                          <h4 class="ciph8 crdoi">Are there specific themes?</h4>
+                        </div>
+                        <p class="cqnsz cfoch">
+                          Aurora is primarily centered on Web3, but remains open to embracing Open Innovation in AI-ML,
+                          FinTech, and other related fields.
+                        </p>
+                      </div>
+                      <!-- Feature -->
+                      <div>
+                        <div class="ceq85 cs2x1 cxwsr cmru4">
+                          <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path
+                              d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z"
+                            ></path>
+                          </svg>
+                          <h4 class="ciph8 crdoi">What is the team size for the hackathon?</h4>
+                        </div>
+                        <p class="cqnsz cfoch">Teams need to have 2 to 4 members when submitting a project.</p>
+                      </div>
+                      <!-- Feature -->
+                      <div>
+                        <div class="ceq85 cs2x1 cxwsr cmru4">
+                          <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path
+                              d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z"
+                            ></path>
+                          </svg>
+                          <h4 class="ciph8 crdoi">Do I will have rights of my own code?</h4>
+                        </div>
+                        <p class="cqnsz cfoch">
+                          Absolutely! Submission only grants usage rights for evaluation and award purposes, ensuring
+                          you maintain full ownership.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+                  <div class="cpb5v">
+                    <!-- <div>
+                                    <div class="cwkz6 cmmug cpb1t c6mtw cicf4 camr2 ciph8 cjeaj">Standard Security</div>
+                                </div> -->
+                    <div class="cjvyj cq0og cld7d c5rb1 clfvo question-container">
+                      <!-- Feature -->
+                      <div>
+                        <div class="ceq85 cs2x1 cxwsr cmru4">
+                          <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path
+                              d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z"
+                            ></path>
+                          </svg>
+                          <h4 class="ciph8 crdoi">Will there be certificates/goodies provided to the participants?</h4>
+                        </div>
+                        <p class="cqnsz cfoch">
+                          Yes, participation certificates and goodies will be rewarded to all the participants.
+                        </p>
+                      </div>
+                      <!-- Feature -->
+                      <div>
+                        <div class="ceq85 cs2x1 cxwsr cmru4">
+                          <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path
+                              d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z"
+                            ></path>
+                          </svg>
+                          <h4 class="ciph8 crdoi">How can we get updates?</h4>
+                        </div>
+                        <p class="cqnsz cfoch">Follow our social media platforms for real-time updates!</p>
+                      </div>
+                      <!-- Feature -->
+                      <div>
+                        <!-- <div class="ceq85 cs2x1 cxwsr cmru4">
+                          <svg class="cw4n2 c03dg" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path
+                              d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z"
+                            ></path>
+                          </svg>
+                          <h4 class="ciph8 crdoi">Will there be food arrangements?</h4> 
+                        </div>
+                         <p class="cqnsz cfoch">Yes, there will be proper meals provided.</p> 
+                      </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <style>
+            .question-container {
+              display: flex;
+              flex-direction: column;
+              margin: 0px 2rem;
+            }
+            @media (max-width: 828px) {
+              .question-container {
+                margin: 0px 0px;
+              }
+            }
+          </style>
+
+          <!-- CTA -->
+          <section class="">
+            <div class="cknuf chyag ck7tl cj5a0">
+              <div class="ca60c co970 c2whg cpn3c ctvyg c2x5m">
+                <!-- Radial gradient -->
+                <div class="c431g cl2cn cddhp c2aec c0mvq cs2x1 cmfhc cmd0z cbixb ch5up cxwsr crt5c" aria-hidden="true">
+                  <div class="c0wqh cl2cn c9pxh cky3t c33km cx692 cxp9g"></div>
+                  <div class="c0wqh cl2cn c7ux4 cgfe7 cky3t ciia3 cexn0"></div>
+                </div>
+                <!-- Blurred shape -->
+                <div class="c431g cl2cn cl2el clndv c0mvq cqedr cluw3 citek" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+                    <defs>
+                      <lineargradient id="bs5-a" x1="19.609%" x2="50%" y1="14.544%" y2="100%">
+                        <stop offset="0%" stop-color="#1AB4B0"></stop>
+                        <stop offset="100%" stop-color="#1AB4B0" stop-opacity="0"></stop>
+                      </lineargradient>
+                    </defs>
+                    <path
+                      fill="url(#bs5-a)"
+                      fill-rule="evenodd"
+                      d="m0 0 461 369-284 58z"
+                      transform="matrix(1 0 0 -1 0 427)"
+                    ></path>
+                  </svg>
+                </div>
+                <!-- Content -->
+                <div class="cknuf cz30m c1xp8">
+                  <div>
+                    <div class="cwkz6 cmmug cpb1t c6mtw cicf4 c0xld ciph8 cjeaj">ELIXIR</div>
+                  </div>
+                  <h2 class="cr09c cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj">Join the journey</h2>
+                  <p class="cvj3n cd2du cfoch">
+                    Get all the latest updates on our instagram handle by just clicking below.
+                  </p>
+                  <div>
+                    <a
+                      class="cmae3 cmmug c53mx ccarb cvpag culnm cco4s cykc9 c2rol cnen9 cxxlx"
+                      href="https://www.instagram.com/geeksforgeeks_abesec/"
+                      target="_blank"
+                    >
+                      Get Updates <span class="ctkza ctfx3 ct2xv cot2b cykc9 c2rol c8087">-&gt;</span>
+                    </a>
+                  </div>
+                </div>
+                <footer id="contact">
+                  <div class="cknuf chyag ck7tl cj5a0 pd">
+                    <h1 class="cr09c cmmug cr2fi chaw1 ch3zp cicf4 ckopp cjeaj footer-main mt-2">Contact Us</h1>
+
+                    <!-- Blocks -->
+                    <!-- Footer -->
+                    <div class="cq0og cld7d cpb5v cmmqp cwki0 border-t-2 border-gray-800">
+                      <!-- 1st block -->
+                      <div class="c2te9 c64tz c7mlk c7trj">
+                        <div class="cs2x1 c0tib c8rkc clfke c5svh cx8wk">
+                          <div class="cznm6 crx0u">
+                            <div class="cznm6">
+                              <!-- Logo -->
+                              <a class="c5puz" href="#about" aria-label="Cruip">
+                                <img src="./images/aurora/aurora-white.svg" width="80" height="80" alt="logo" />
+                              </a>
+                            </div>
+                            <div class="cqnsz cuxtl footer-col">
+                              © Elixir Tech Communtiy <span class="c2v91"></span>
+                            </div>
+                          </div>
+                          <!-- Social links -->
+                          <ul class="cs2x1">
+                            <li>
+                              <a
+                                class="cs2x1 cxwsr crt5c ct2xv cco4s cykc9 c2rol c78tz"
+                                href="https://twitter.com/TheElixirTech"
+                                target="_blank"
+                                aria-label="Twitter"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-twitter-x"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                                  />
+                                </svg>
+                              </a>
+                            </li>
+                            <!-- <li class="c9et2">
+                                                <a class="cs2x1 cxwsr crt5c ct2xv cco4s cykc9 c2rol c78tz" href="#"
+                                                    aria-label="Dev.to">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                                                        <path class="cqwyn cjwbb cfck2"
+                                                            d="M12.29 14.3a.69.69 0 0 0-.416-.155h-.623v3.727h.623a.689.689 0 0 0 .416-.156.543.543 0 0 0 .21-.466v-2.488a.547.547 0 0 0-.21-.462ZM22.432 8H9.568C8.704 8 8.002 8.7 8 9.564v12.872A1.568 1.568 0 0 0 9.568 24h12.864c.864 0 1.566-.7 1.568-1.564V9.564A1.568 1.568 0 0 0 22.432 8Zm-8.925 9.257a1.631 1.631 0 0 1-1.727 1.687h-1.657v-5.909h1.692a1.631 1.631 0 0 1 1.692 1.689v2.533ZM17.1 14.09h-1.9v1.372h1.163v1.057H15.2v1.371h1.9v1.056h-2.217a.72.72 0 0 1-.74-.7v-4.471a.721.721 0 0 1 .7-.739H17.1v1.054Zm3.7 4.118c-.471 1.1-1.316.88-1.694 0l-1.372-5.172H18.9l1.058 4.064 1.056-4.062h1.164l-1.378 5.17Z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </li> -->
+                            <li class="c9et2">
+                              <a
+                                class="cs2x1 cxwsr crt5c ct2xv cco4s cykc9 c2rol c78tz"
+                                href="https://github.com/ElixirTechCommunity"
+                                target="_blank"
+                                aria-label="Github"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-github ml-2"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                                  />
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <style>
+                        @media (max-width: 828px) {
+                          .pd {
+                            padding: 0px 0px;
+                          }
+                        }
+                      </style>
+
+                      <!-- 2nd block -->
+                      <div class="c7197 cu3kj c96dz footer-col">
+                        <h1 class="cjvyj cqnsz ciph8 crdoi footer-col">Email</h1>
+                        <h3 class="cb8dn cqnsz">anshsaxena4190@gmail.com</h3>
+                        <h3 class="cb8dn cqnsz">namdev2003satyam@gmail.com</h3>
+                        <!-- <ul class="cb8dn cqnsz">
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object &amp; Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                </ul> -->
+                      </div>
+
+                      <!-- 3rd block -->
+                      <!-- <div class="c7197 cu3kj c96dz">
+                                <h6 class="cjvyj cqnsz ciph8 crdoi">Object</h6>
+                                <ul class="cb8dn cqnsz">
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object &amp; Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+
+                      <!-- 4th block -->
+                      <!-- <div class="c7197 cu3kj c96dz">
+                                <h6 class="cjvyj cqnsz ciph8 crdoi">Object</h6>
+                                <ul class="cb8dn cqnsz">
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+
+                      <!-- 5th block -->
+                      <div class="c7197 cu3kj c96dz">
+                        <!-- <h6 class="cjvyj cqnsz ciph8 crdoi">Object</h6> -->
+                        <h1 class="cjvyj cqnsz ciph8 crdoi footer-col">Contact No.</h1>
+                        <h3 class="cb8dn cqnsz footer-col">+91 7355743158</h3>
+                        <h3 class="cb8dn cqnsz footer-col">+91 8077929614</h3>
+
+                        <!-- <ul class="cb8dn cqnsz">
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object &amp; Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                    <li>
+                                        <a class="cfoch cco4s cykc9 c2rol cib6f" href="https://preview.cruip.com/#0">Object</a>
+                                    </li>
+                                </ul> -->
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- Site footer -->
+        <!-- <div class="flex justify-center w-[100%] h-[20%] absolute overflow-hidden z-[-1] border-1">
+          <img class="logo-rotate" src="./images/aurora/greengrad.png">
+          <style>
+            .logo-rotate{
+              animation: spin 50s linear infinite;
+            }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+          </style>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="asset/stellar/./js/vendors/alpinejs.min.js" defer=""></script>
+    <script src="asset/stellar/./js/vendors/aos.js"></script>
+    <script src="asset/stellar/./js/vendors/swiper-bundle.min.js"></script>
+    <script src="asset/stellar/./js/main.js"></script>
+
+    <script
+      defer
+      src="asset/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+      integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+      data-cf-beacon='{"rayId":"7fd375397ab442c0","version":"2023.8.0","r":1,"b":1,"token":"59cc17d45d734f9ba118c63036ab1b84","si":100}'
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/96a9e629b0.js" crossorigin="anonymous"></script>
+  </body>
+</html>

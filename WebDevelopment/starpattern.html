@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=\, initial-scale=1.0">
+   <title>StarPatter</title>
+</head>
+<body>
+   <script>
+      var a = parseInt(prompt("Enter value of a : "));
+      if (a > 3) {
+          for (let i = 0; i < a; i++) {
+              for (let j = 0; j <= i; j++) {
+                  document.write("*");
+              }
+              document.write("<br>"); 
+          }
+      } else if (a < 3) {
+          document.write("The value of a is less than 3");
+      } else {
+          document.write("Star pattern printing rejected...");
+      }
+  </script>
+  
+</body>
+</html>
