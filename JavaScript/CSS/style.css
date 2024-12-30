@@ -1,0 +1,12 @@
+.Wish-Button{
+   background-color: lightgreen;
+   padding: 5px 15px;
+   border: none;
+   border-radius: 10px;
+}
+.cart-button{
+   padding: 5px 25px;
+   border: 2px solid black;
+   border-radius: 10px;
+   font-weight: bold;
+}

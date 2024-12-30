@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+   <h1>Siddhant Rastogi</h1 >
+   <button>Click Me</button>
+   <hr>
+   <button class="Wish-Button" onclick="cartquantity = cartquantity+1;
+   document.querySelector('#cart-summary').innerText = 'Your cart has '+ cartquantity+' items';">Add to Cart</button>
+
+   <button class="cart-button" onclick="cartquantity--;
+   document.querySelector('#cart-summary').innerText='Your cart has '+ cartquantity+ ' items';">Move to Wishlist</button>
+
+   <h1 id="cart-summary"></h1>
+   <p id="testing"></p>
+<script src="/Scripts/script.js">
+   
+</script>
+</body>
+</html>
