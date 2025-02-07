@@ -9,8 +9,6 @@ public class DemoApplication {
 
     public static void main(String[] args) {
 
-
-
         ApplicationContext context = SpringApplication.run(DemoApplication.class, args);//creates container in the jvm
 
         // Dev obj = new Dev(); //manually creating a object in the jvm outide the IOC container(spring  container).... its our responsibility to maintain this object...
