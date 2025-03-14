@@ -60,6 +60,7 @@ public class Product {
                 "prodId=" + prodId +
                 ", prodName='" + prodName + '\'' +
                 '}';
+
     }
 
 
