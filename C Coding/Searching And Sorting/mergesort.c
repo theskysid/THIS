@@ -21,14 +21,22 @@ void merge(int arr[], int beg, int mid, int end)
    int n1 = mid - beg + 1;
    int n2 = end - mid;
 
+   //creating two sub arrays, last for infinty
    int L[n1 + 1], R[n2 + 1];
-
+   
+   //copying element in the left sub array
    for (i = 0; i < n1; i++)
       L[i] = arr[beg + i];
+
+   // copying element in the right sub array
    for (j = 0; j < n2; j++)
       R[j] = arr[mid + 1 + j];
+   
+   //setting the last element of both the arrays
    L[n1] = INT_MAX;
    R[n2] = INT_MAX;
+   
+   
    i = 0;
    j = 0;
    k = end;
@@ -58,7 +66,7 @@ void printArray(int A[], int size)
 // Driver code
 int main()
 {
-   int arr[] = {12, 11, 13, 5, 6, 7};
+   int arr[] = {12, 11, 11, 5, 6, 7};
    int arr_size = sizeof(arr) / sizeof(arr[0]);
 
    printf("Given array is \n");

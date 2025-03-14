@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 void insertionSort(int arr[], int N) {
-    for (int i = 1; i < N; i++) {
+    for (int i = 1; i < N; i++) { //leaving first element so that it can be the key
         int key = arr[i];
         int j = i - 1;
 

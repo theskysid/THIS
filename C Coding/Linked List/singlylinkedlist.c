@@ -11,9 +11,10 @@ struct node *head = NULL;
 void insertatbeg(int val){
    struct node *newnode = (struct node *)malloc(sizeof(struct node));
 
+   newnode->data = val;
    if (head==NULL)
    {
-      newnode->next = val;
+      newnode->next = NULL;
       head = newnode;
    } else
    {
@@ -24,19 +25,37 @@ void insertatbeg(int val){
    
 void insertatpos(int pos, int val){
    struct node *newnode = (struct node *)malloc(sizeof(struct node));
+   
    struct node *temp = head;
-
-   for (int i = 1; i < pos-2; i++)
+   
+   newnode->data = val;
+   newnode->next =NULL;
+   
+   //for first position
+   if (pos==1)
    {
-      temp = temp->next;
+      newnode->next = head;
+      head = newnode;
+      return;
+   }
+   
+
+   for (int i = 1; i < pos-1; i++)
+   {
+      //if pointer temp runs out of linked list
       if (temp == NULL)
       {
          printf("Wrong position");
+         free(newnode);
          return;
       }
-   }
-
+      temp = temp->next;
+      }
+   
+   //link from newnode to the next node
    newnode->next = temp->next;
+   
+   //link from existing node to new node
    temp->next = newnode;
 }
 
@@ -59,12 +78,16 @@ void insertatend(int val){
 }
 
 void deletefrombeg(){
-   struct node *temp = head;
+   
    if (head==NULL)
    {
       printf("Linked list is empty...");
+      return;
    }
-   head = head->next;
+   struct node *temp = head; //stores the node to be deleted
+   head = head->next; //move the head to the next node 
+
+   free(temp); //free memory of temp;
 }
 
 void deletefrompos(int pos){
@@ -74,14 +97,13 @@ void deletefrompos(int pos){
    if (head == NULL)
    {
       printf("Linked list doesnt exist");
-      free(temp);
       return;
    }
    if (pos==1)
    {
       deletefrombeg();
    }
-   for (int i = 1; i < pos-1; i++){
+   for (int i = 1; i < pos; i++){
       prev = temp;
       temp = temp->next;
       if (temp->next==NULL)
@@ -97,18 +119,21 @@ void deletefromend(){
    struct node *temp = head;
    struct node *prev=NULL;
 
+   //if there is no node
    if (head==NULL)
    {
       printf("Linked list doesnt exist");
       return;
    }
 
+   //if there is single node
    if (temp->next==NULL)
    {
       head = NULL;
       free(temp);
       return;
    }
+
 
    while (temp->next!=NULL)
    {

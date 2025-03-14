@@ -87,7 +87,7 @@ struct node *mult(struct node * poly1, struct node * poly2){
 
       while (temp!=NULL)
       {
-         product = insert(product,poly1->coef*temp->coef,poly1->expo+poly2->expo);
+         product = insert(product,poly1->coef*temp->coef,poly1->expo+temp->expo);
          temp = temp->next;
       }
       sop = add(sop,product);
