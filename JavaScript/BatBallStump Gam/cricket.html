@@ -28,18 +28,39 @@
       Stump
     </button>
 
-    <script>
-      //creating an object to track the score of the game
-      let score = {
-        win: 0,
-        lost: 0,
-        tie: 0,
+    <button
+      onclick="localStorage.clear()
+      resetScore();
+    "
+    >
+      Reset
+    </button>
 
-        //method of score to display the score... same as object of class in java having the methods
-        displayScore: function () {
-          return `Won:${score.win}, Lost: ${score.lost}, Tie: ${score.tie}`;
-        },
-      };
+    <h3 id="user-move"></h3>
+    <h3 id="comp-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+
+    <script>
+      //checking if there exit score in memory then store it in scoreStr
+      let scoreStr = localStorage.getItem("Score");
+      let score;
+      resetScore(scoreStr);
+
+      //bhot khatarnak code whole logic of storing the data lies here
+      function resetScore(scoreStr) {
+        score = scoreStr
+          ? JSON.parse(scoreStr)
+          : {
+              win: 0,
+              lost: 0,
+              tie: 0,
+            };
+        score.displayScore = function () {
+          return `Won:${this.win}, Lost: ${this.lost}, Tie: ${this.tie}`;
+        };
+        showResult();
+      }
 
       //generating computer choice
       function generateCompChoice() {
@@ -70,10 +91,13 @@
           }
         } else if (userMove === "Ball") {
           if (computerMove === "Ball") {
+            score.tie++;
             return `It's a tie`;
           } else if (computerMove === "Bat") {
+            score.lost++;
             return "Computer has won";
           } else if (computerMove === "Stump") {
+            score.win++;
             return "User won.";
           }
         } else {
@@ -92,11 +116,20 @@
 
       //displaying result
       function showResult(userMove, computerMove, result) {
-        alert(`You have chosen ${userMove}. Computer have chosen ${computerChoice}
-        
-        ${result}
-        
-        ${score.displayScore()}`);
+        localStorage.setItem("Score", JSON.stringify(score));
+
+        document.querySelector("#user-move").innerText =
+          userMove !== undefined ? `You have chosen ${userMove}.` : ``;
+
+        document.querySelector("#comp-move").innerText =
+          computerMove !== undefined
+            ? `Computer has chosen ${computerMove}`
+            : ``;
+
+        document.querySelector("#result").innerText =
+          result !== undefined ? result : ``;
+
+        document.querySelector("#score").innerText = score.displayScore();
       }
     </script>
   </body>
