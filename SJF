@@ -1,0 +1,116 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Structure to store process information
+typedef struct {
+    int id;            // Process ID
+    int arrival_time;  // Arrival Time
+    int burst_time;    // Burst Time
+    int completion_time;
+    int turnaround_time;
+    int waiting_time;
+} Process;
+
+// Comparator function to compare processes based on arrival time
+int compare(const void *a, const void *b) {
+    return ((Process *)a)->arrival_time - ((Process *)b)->arrival_time;
+}
+
+// Function to find the process with the shortest burst time
+int find_next_process(Process processes[], int n, int current_time, int *completed) {
+    int min_burst_time = 10000;
+    int index = -1;
+
+    for (int i = 0; i < n; i++) {
+        if (!completed[i] && processes[i].arrival_time <= current_time && processes[i].burst_time < min_burst_time) {
+            min_burst_time = processes[i].burst_time;
+            index = i;
+        }
+    }
+    return index;
+}
+
+// Function to calculate Completion Time, Turnaround Time, and Waiting Time
+void find_times(Process processes[], int n) {
+    int total_wt = 0, total_tat = 0;
+    int completed[n]; // Array to track whether the process has completed
+
+    for (int i = 0; i < n; i++) {
+        completed[i] = 0; // Initially, no process is completed
+    }
+
+    int current_time = 0;
+    int completed_count = 0;
+
+    while (completed_count < n) {
+        // Find the next process to execute based on shortest burst time
+        int index = find_next_process(processes, n, current_time, completed);
+
+        // If no process is ready to execute, increase time
+        if (index == -1) {
+            current_time++;
+            continue;
+        }
+
+        // Calculate the completion time of the selected process
+        processes[index].completion_time = current_time + processes[index].burst_time;
+
+        // Calculate the turnaround time and waiting time
+        processes[index].turnaround_time = processes[index].completion_time - processes[index].arrival_time;
+        processes[index].waiting_time = processes[index].turnaround_time - processes[index].burst_time;
+
+        // Update total waiting time and turnaround time
+        total_wt += processes[index].waiting_time;
+        total_tat += processes[index].turnaround_time;
+
+        // Mark the process as completed
+        completed[index] = 1;
+        completed_count++;
+
+        // Move the current time forward to the completion time of the process
+        current_time = processes[index].completion_time;
+    }
+
+    // Print the results
+    printf("\nProcess ID | Arrival Time | Burst Time | Completion Time | Turnaround Time | Waiting Time\n");
+    for (int i = 0; i < n; i++) {
+        printf("P%d         | %d            | %d           | %d               | %d               | %d\n", 
+                processes[i].id, 
+                processes[i].arrival_time, 
+                processes[i].burst_time, 
+                processes[i].completion_time, 
+                processes[i].turnaround_time, 
+                processes[i].waiting_time);
+    }
+
+    printf("\nAverage Waiting Time: %.2f\n", (float)total_wt / n);
+    printf("Average Turnaround Time: %.2f\n", (float)total_tat / n);
+}
+
+int main() {
+    int n;
+
+    // Input the number of processes
+    printf("Enter the number of processes: ");
+    scanf("%d", &n);
+
+    Process processes[n];
+
+    // Input the process details
+    for (int i = 0; i < n; i++) {
+        processes[i].id = i + 1;
+        printf("\nEnter details for Process %d:\n", i + 1);
+        printf("Arrival Time: ");
+        scanf("%d", &processes[i].arrival_time);
+        printf("Burst Time: ");
+        scanf("%d", &processes[i].burst_time);
+    }
+
+    // Sort processes based on arrival time using qsort
+    qsort(processes, n, sizeof(Process), compare);
+
+    // Calculate times and display the results
+    find_times(processes, n);
+
+    return 0;
+}
