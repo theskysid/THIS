@@ -8,7 +8,7 @@ function App() {
     <center class="todo-container">
       <AppName />
       <AddTodo />
-      <TodoItem />
+      <TodoItem todoName={'Buy milk'} tododate={'23-10-2024'}/>
     </center>
   );
 }
