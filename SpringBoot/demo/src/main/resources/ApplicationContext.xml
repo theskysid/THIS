@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <!--
+    Bean definitions are written inside the <beans> tag.
+    Each <bean> defines an object to be managed by Spring.
+
+    - 'class' specifies the fully qualified name of the class whose object is to be created.
+    - 'id' is a unique identifier used to retrieve the bean from the container (e.g., in the main method).
+    -->
+    <bean id="lamboid" class="Spring.demo1.demo.file.Lambo"></bean>
+</beans>
