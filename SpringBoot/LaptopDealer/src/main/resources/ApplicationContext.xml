@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="i3" class = "com.theskysid.laptopdealer.i3"></bean>
+    <bean id="i5" class = "com.theskysid.laptopdealer.i5"></bean>
+    <bean id="i7" class = "com.theskysid.laptopdealer.i7"></bean>
+
+    <!-- bean definitions here -->
+    <bean id="dellwithi3" class="com.theskysid.laptopdealer.Dell">
+        <constructor-arg ref="i3"></constructor-arg>
+    </bean>
+    <bean id="dellwithi5" class="com.theskysid.laptopdealer.Dell">
+        <constructor-arg ref="i5"></constructor-arg>
+    </bean>
+    <bean id="dellwithi7" class="com.theskysid.laptopdealer.Dell">
+        <constructor-arg ref="i7"></constructor-arg>
+    </bean>
+
+    <bean id="hpwithi3" class="com.theskysid.laptopdealer.Hp">
+        <constructor-arg ref="i3"></constructor-arg>
+    </bean>
+    <bean id="hpwithi5" class="com.theskysid.laptopdealer.Hp">
+        <constructor-arg ref="i5"></constructor-arg>
+    </bean>
+    <bean id="hpwithi7" class="com.theskysid.laptopdealer.Hp">
+        <constructor-arg ref="i7"></constructor-arg>
+    </bean>
+
+    <bean id="Asuswithi3" class="com.theskysid.laptopdealer.Asus">
+        <constructor-arg ref="i3"></constructor-arg>
+    </bean>
+    <bean id="Asuswithi5" class="com.theskysid.laptopdealer.Asus">
+        <constructor-arg ref="i5"></constructor-arg>
+    </bean>
+    <bean id="Asuswithi7" class="com.theskysid.laptopdealer.Asus">
+        <constructor-arg ref="i7"></constructor-arg>
+    </bean>
+
+
+
+</beans>
