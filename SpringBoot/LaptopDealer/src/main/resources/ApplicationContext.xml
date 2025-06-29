@@ -29,14 +29,15 @@
         <constructor-arg ref="i7"></constructor-arg>
     </bean>
 
+    <!--  we will do setter injection here-->
     <bean id="Asuswithi3" class="com.theskysid.laptopdealer.Asus">
-        <constructor-arg ref="i3"></constructor-arg>
+       <property name="processor" ref="i3"></property>
     </bean>
     <bean id="Asuswithi5" class="com.theskysid.laptopdealer.Asus">
-        <constructor-arg ref="i5"></constructor-arg>
+        <property name="processor" ref="i5"></property>
     </bean>
     <bean id="Asuswithi7" class="com.theskysid.laptopdealer.Asus">
-        <constructor-arg ref="i7"></constructor-arg>
+        <property name="processor" ref="i7"></property>
     </bean>
 
 
