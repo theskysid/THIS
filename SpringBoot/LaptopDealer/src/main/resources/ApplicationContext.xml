@@ -29,7 +29,11 @@
         <constructor-arg ref="i7"></constructor-arg>
     </bean>
 
-    <!--  we will do setter injection here-->
+    <!--
+    We are doing setter injection here.
+    - 'name' refers to the name of the setter method's property (i.e., the field to inject into).
+    - 'ref' specifies the bean ID of the object to be injected.
+-->
     <bean id="Asuswithi3" class="com.theskysid.laptopdealer.Asus">
        <property name="processor" ref="i3"></property>
     </bean>
