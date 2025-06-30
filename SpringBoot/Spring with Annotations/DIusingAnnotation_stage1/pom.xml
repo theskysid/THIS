@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.theskysid</groupId>
-    <artifactId>DIusingAnnotationExplanation</artifactId>
+    <artifactId>DIusingAnnotation_stage1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>DIusingAnnotationExplanation</name>
     <description>DIusingAnnotationExplanation</description>
