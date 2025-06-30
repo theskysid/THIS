@@ -20,6 +20,7 @@ public class Product {
     private String prodName;
     private int price;
 
+    //default constructer
     public Product(){}
 
     //constructer for the class product

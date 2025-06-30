@@ -24,7 +24,7 @@ public class SocialMediaApplication {
       PostList postList = (PostList) contextObject.getBean("postList");
 
       while (true) {
-         System.out.println("Choose from below\n1. Create a post\n2. See all your post");
+         System.out.println("Choose from below\n1. Create a post\n2. See all your post\n3. Exit");
          int userSelection = sc.nextInt();
          sc.nextLine(); // Consume leftover newline character
 
@@ -51,6 +51,8 @@ public class SocialMediaApplication {
                // Print all posts made by the user
                postList.getAllPosts().forEach(item -> System.out.println(item.getMessage()));
                break;
+            case 3:
+               contextObject.close();
          }
       }
    }

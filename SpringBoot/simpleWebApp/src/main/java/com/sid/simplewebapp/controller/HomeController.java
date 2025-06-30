@@ -10,7 +10,7 @@ public class HomeController {
     @RequestMapping("/")
 //    @ResponseBody
     public String greet(){
-        return "Welcome to Simple Web App";
+        return "My name is Friday";
     }
 
     @RequestMapping("/about")

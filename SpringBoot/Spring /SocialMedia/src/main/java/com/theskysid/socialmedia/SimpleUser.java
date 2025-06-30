@@ -9,6 +9,14 @@ public class SimpleUser implements User {
    // This variable holds the list of posts created by the user.
    PostList postList;
 
+   public void init(){
+      System.out.println("DB Connection successful");
+   }
+
+   public void destroy(){
+      System.out.println("context object closed once it is closed it has to be openend once again");
+   }
+
    // This method sets the user's name.
    @Override
    public void setUsername(String username) {

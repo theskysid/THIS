@@ -17,7 +17,7 @@
 
     <!-- Bean for the User.
          We are setting the postList dependency using setter injection. -->
-    <bean id="user" class="com.theskysid.socialmedia.SimpleUser">
+    <bean id="user" class="com.theskysid.socialmedia.SimpleUser" init-method="init" destroy-method="destroy">
         <property name="postList" ref="postList" />
     </bean>
 
