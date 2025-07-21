@@ -67,7 +67,7 @@ public class VotingApplication {
          case 2:
             authorityCenter.getUserList().getusers().forEach(item -> System.out.println(item.getUsername() + " voted for " + item.getPoliticalParty().getPartyName()));
             contextObject.close();
-            System.out.println();1
+            System.out.println();
             break;
       }
       }

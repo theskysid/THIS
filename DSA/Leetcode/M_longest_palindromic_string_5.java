@@ -36,7 +36,7 @@ public class M_longest_palindromic_string_5 {
 
     public static void main(String[] args) {
         M_longest_palindromic_string_5 lp = new M_longest_palindromic_string_5();
-        String result = lp.longestPalindrome("babad");
+        String result = lp.longestPalindrome("racecar");
         System.out.println("Longest Palindromic Substring: " + result);
     }
 }

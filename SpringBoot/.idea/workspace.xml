@@ -34,16 +34,10 @@
       <change beforePath="$PROJECT_DIR$/../React/first-react-app/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../React/first-react-app/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../React/first-react-app/src/hello.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../React/first-react-app/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../React/first-react-app/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SpringBoot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleWebApp/src/main/java/com/sid/simplewebapp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleWebApp/src/main/java/com/sid/simplewebapp/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleWebApp/src/main/java/com/sid/simplewebapp/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/simpleWebApp/src/main/java/com/sid/simplewebapp/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DIusingAnnotation_stage4/src/main/java/com/theskysid/diusingannotation_stage4/BtechStudent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DIusingAnnotation_stage4/src/main/java/com/theskysid/diusingannotation_stage4/MBAStudent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DIusingAnnotation_stage4/src/main/java/com/theskysid/diusingannotation_stage4/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DIusingAnnotation_stage4/src/main/java/com/theskysid/diusingannotation_stage4/StudentInfo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../WebDevelopment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDevelopment/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springdemo/src/main/java/com/example/springdemo/MyBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springdemo/src/main/java/com/example/springdemo/MyBean.java" afterDir="false" />
     </list>
@@ -86,6 +80,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Demo1Application.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -112,7 +107,7 @@
       <recent name="com.example.demo" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Demo1Application">
     <configuration name="Demo1Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Spring.demo1.demo.Demo1Application" />
       <module name="demo" />
@@ -160,6 +155,7 @@
       <workItem from="1738915479756" duration="9023000" />
       <workItem from="1751111359625" duration="766000" />
       <workItem from="1751129539889" duration="4276000" />
+      <workItem from="1751348539091" duration="52000" />
     </task>
     <servers />
   </component>

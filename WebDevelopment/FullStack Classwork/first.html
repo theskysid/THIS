@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even and Odd Numbers</title>
+</head>
+<body>
+    <h2>Even and Odd Numbers from 1 to 100</h2>
+    <button onclick="displayNumbers()">Show Numbers</button>
+    <h3>Even Numbers:</h3>
+    <p id="even"></p>
+    <h3>Odd Numbers:</h3>
+    <p id="odd"></p>
+    
+    <script>
+        function displayNumbers() {
+            let evenNumbers = [];
+            let oddNumbers = [];
+            
+            for (let i = 1; i <= 100; i++) {
+                if (i % 2 === 0) {
+                    evenNumbers.push(i);
+                } else {
+                    oddNumbers.push(i);
+                }
+            }
+            
+            document.querySelector("#even").innerText = evenNumbers.join(", ");
+            document.querySelector("#odd").innerText = oddNumbers.join(", ");
+        }
+    </script>
+</body>
+</html>

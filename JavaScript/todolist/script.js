@@ -28,6 +28,7 @@ function displayItems(){
             <span>${item}</span>
             <span>${dueDate}</span>
             <button onclick = "todoList.splice(${i},1); displayItems();">Delete</button>
+            <br>
          `  
    }
    containerElement.innerHTML = newHtml;

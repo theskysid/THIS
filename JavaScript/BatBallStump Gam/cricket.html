@@ -127,7 +127,7 @@
             : ``;
 
         document.querySelector("#result").innerText =
-          result !== undefined ? result : ``;
+          result || ``;
 
         document.querySelector("#score").innerText = score.displayScore();
       }

@@ -1,7 +1,7 @@
 package Z_GFG.Bank;
 import java.util.*;
 
-public class main {
+public class bank {
 
     static ArrayList<String> accounts = new ArrayList<>();
     static ArrayList<String> names = new ArrayList<>();

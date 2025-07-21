@@ -1,11 +1,12 @@
-import Hello from "./hello";
+import Hello from "./components/hello";
+import MapMethod from "./components/MapMethod";
 
 function App(){
-  return <div><h1>
-    My name is Siddhant Rastogi
-  </h1>
+  return <>
+    <h1>My name is Siddhant Rastogi</h1>
     <Hello></Hello>
-    </div>
+    <MapMethod></MapMethod>
+    </>
 }
 
-export default App;
+export default App; 
