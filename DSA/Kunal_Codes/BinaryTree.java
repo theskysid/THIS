@@ -20,6 +20,7 @@ public class BinaryTree {
       root = new Node(value);
       populate(sc, root);
    }
+
    private void populate(Scanner sc, Node node) {
       System.out.println("Do you want to enter the left child of the node " + node.value + ": ");
       boolean left = sc.nextBoolean();
@@ -38,6 +39,7 @@ public class BinaryTree {
          populate(sc, node.right);
       }
    }
+
    public void display() {
       display(root, "");
    }
@@ -49,6 +51,42 @@ public class BinaryTree {
       System.out.println(indent + node.value);
       display(node.left, indent + "\t");
       display(node.right, indent + "\t");
+   }
+
+   public void preOrderTraversal(){
+      preOrderTraversal(root);
+   }
+   private void preOrderTraversal(Node node) {
+      if (node == null) {
+         return;
+      }
+      System.out.print(node.value + " ");
+      preOrderTraversal(node.left);
+      preOrderTraversal(node.right);
+   }
+
+   public void inOrderTraversal(){
+      inOrderTraversal(root);
+   }
+   private void inOrderTraversal(Node node) {
+      if (node == null) {
+         return;
+      }
+      inOrderTraversal(node.left);
+      System.out.println(node.value + " ");
+      inOrderTraversal(node.right);
+   }
+
+   public void postOrderTraversal(){
+      postOrderTraversal(root);
+   }
+   private void postOrderTraversal(Node node) {
+      if (node == null) {
+         return;
+      }
+      postOrderTraversal(node.left);
+      postOrderTraversal(node.right);
+      System.out.println(node.value + " ");
    }
 
    public static void main(String[] args) {

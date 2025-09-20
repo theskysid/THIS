@@ -22,5 +22,4 @@ public class M_singleelementinasortedarray_540 {
         int[] arr = {1,1,2,3,3,4,4,8,8};
         System.out.println(singleNonDuplicate(arr));
     }
-    //comment
 }
