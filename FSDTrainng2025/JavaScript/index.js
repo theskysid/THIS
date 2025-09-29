@@ -76,7 +76,7 @@ function selectLanguage(lang){
         function jsCompiler(){
             return "JavaScript compiler";
         }
-        data = jsCompiler();
+        data = jsCompiler();[]
     } else {
         data = "No language selected";
     }
