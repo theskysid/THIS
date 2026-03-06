@@ -1,0 +1,31 @@
+package Leetcode;
+
+public class Problem76 {
+   public String minWindow(String s, String t) {
+      if (s.length() < t.length()) return "";
+
+      int[] need = new int[128];
+      for (char c : t.toCharArray()) need[c]++;
+
+      int left = 0, right = 0, required = t.length();
+      int minLen = Integer.MAX_VALUE, minStart = 0;
+
+      while (right < s.length()) {
+         char c = s.charAt(right++);
+         if (need[c] > 0) required--;
+         need[c]--;
+
+         while (required == 0) {
+            if (right - left < minLen) {
+               minLen = right - left;
+               minStart = left;
+            }
+            char l = s.charAt(left++);
+            need[l]++;
+            if (need[l] > 0) required++;
+         }
+      }
+
+      return minLen == Integer.MAX_VALUE ? "" : s.substring(minStart, minStart + minLen);
+   }
+}
